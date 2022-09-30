@@ -147,6 +147,21 @@ a:focus {
   margin-right: 8px;
 }
 
+.youtube-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.youtube-container iframe,
+.youtube-container object,
+.youtube-container embed {
+  position:absolute;
+  top:0;
+  left:10%;
+  width:80%;
+  height:80%;
+}
 /* ======= Header ======= */
 .header {
   position: fixed;
@@ -636,6 +651,75 @@ a:focus {
 .testimonials-section .item .quote-source {
   color: rgba(0, 0, 0, 0.6);
 }
+
+/* ======= daolnews Section ======= */
+.daolnews-section {
+  padding-top: 90px;
+}
+
+.daolnews-section .section-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.daolnews-section .intro {
+  color: #a2a6af;
+  font-size: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.daolnews-section .intro a {
+  color: #797f8b;
+}
+
+.daolnews-section .intro a:hover {
+  color: #494d55;
+}
+
+.daolnews-nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.daolnews-nav .nav-link {
+  position: relative;
+  background: none;
+  padding: 10px 0;
+  color: #616670;
+  font-size: 16px;
+}
+
+.daolnews-nav .nav-link:hover {
+  background: none;
+  color: #40babd;
+}
+
+.daolnews-nav .nav-link .svg-inline--fa {
+  margin-right: 15px;
+  width: 20px;
+  font-size: 30px;
+  position: relative;
+  top: -2px;
+}
+
+.daolnews-nav .nav-link.active {
+  color: #40babd;
+  background: none;
+  font-weight: bold;
+}
+a:visited {
+  color: gray;
+  text-decoration: none;
+}
+a:hover {
+  color: #40babd;
+  text-decoration: underline;
+}
+
 
 /* ======= Features Section ======= */
 .features-section {
