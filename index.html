@@ -1,339 +1,38 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>(주)다올피플 DAOL-People</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="웹&모바일 시스템 개발 및 유지보수 전문 기업. 하는 일마다 복이 오는 사람들 (주)다올피플.">
-    <meta name="author" content="(주)다올피플 DAOL-People">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <!-- FontAwesome JS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2K3Q159BC1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="./src/assets/img/favicon.png" />
+    <title>(주) 다올피플</title>
+    <!--     Fonts and icons     -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
+    />
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+  </head>
 
-  gtag('config', 'G-2K3Q159BC1');
-</script>
-</head> 
-
-<body>
-    <!-- ******HEADER****** --> 
-    <header id="header" class="header">  
-        <div class="container">       
-            <h1 class="logo">
-                <a class="scrollto" href="#hero">
-                    <span class="text">(주)다올피플</span> <span class="highlight">DAOL-People</span></a>
-            </h1><!--//logo-->
-            <nav class="main-nav navbar-expand-md float-right navbar-inverse" role="navigation">
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button><!--//nav-toggle-->
-                
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item"><a class="active nav-link scrollto" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#testimonials">연혁</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#features">사업분야</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#daolnews">다올소식</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#map">오시는길</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#contact">문의하기</a></li>
-                    </ul><!--//nav-->
-                </div><!--//navabr-collapse-->
-            </nav><!--//main-nav-->                     
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div id="hero" class="hero-section">
-        
-        <div id="hero-carousel" class="hero-carousel carousel carousel-fade slide" data-ride="carousel" data-interval="10000">
-            
-			<!-- Indicators
-			<ol class="carousel-indicators">
-				<li class="active" data-slide-to="0" data-target="#hero-carousel"></li>
-				<li data-slide-to="1" data-target="#hero-carousel"></li>
-				<li data-slide-to="2" data-target="#hero-carousel"></li>
-			</ol> -->
-			
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-    			
-				<div class="carousel-item item-1 active">
-					<div class="item-content container" align="center">
-    					<div class="item-content-inner" align="center">
-    				        
-				            <h2 class="heading">(주)다올피플<br class="d-none d-md-block">DAOL-People</h2>
-                            <p class="intro" id="test-content-1">
-                                *[다올]은 순우리말로 "하는 일마다 복이온다."라는 뜻으로<br>
-                                [다올피플]은 "하는 일마다 복이 오는 사람들"을 뜻합니다.
-                            </p>
-    					</div><!--//item-content-inner-->
-					</div><!--//item-content-->
-				</div><!--//item-->
-			</div><!--//carousel-inner-->
-
-		</div><!--//carousel-->
-    </div><!--//hero-->
-    <div id="about" class="about-section">
-        <div class="container text-center">
-            <h2 class="section-title">About</h2>
-            <p class="intro">
-                <h5 class="item-title"><strong><!-- 보안솔루션 공급 및 구축, <br>-->웹&모바일 시스템 구축 및 유지보수까지 완벽한 전문 기업</strong></h5>
-                <br>
-                ㈜다올피플만의 “특별한 차이” 를 통해 고객에게 “가치 있는 경험” 을 제공합니다.<br>
-                e-Business의 모든 서비스를 제공할 수 있는 Total Service Provider 입니다.
-            </p>
-            
-            <div class="items-wrapper row">
-                <div class="item col-md-4 col-12">
-                    <div class="item-inner">
-                        <div class="figure-holder">
-                        </div><!--//figure-holder-->
-                        <h3 class="item-title">고객감동을 실현하는 기업</h3>
-                        <div class="item-desc mb-3">
-                            ㈜다올피플은 기술적 공헌을 통해 고객이 경쟁력을 제고하고 발전할 수 있도록 최선을 다하여 고객만족과 신뢰를 이끌어 냅니다.
-                        </div><!--//item-desc-->
-                    </div><!--//item-inner-->
-                </div><!--//item-->
-                <div class="item col-md-4 col-12">
-                    <div class="item-inner">
-                        <div class="figure-holder">
-                            <!-- <img class="figure-image" src="assets/images/figure-2.png" alt="image"> -->
-                        </div><!--//figure-holder-->
-                        <h3 class="item-title">사회적 책임을 다하는 기업</h3>
-                        <div class="item-desc mb-3">
-                            ㈜다올피플은 사회적 기업으로서 창출된 이익을 사회에 환원하며, 따뜻하고 풍요로운 사회를 만들어가는데 기여합니다.
-                        </div><!--//item-desc-->
-                    </div><!--//item-inner-->
-                </div><!--//item-->
-                <div class="item col-md-4 col-12">
-                    <div class="item-inner">
-                        <div class="figure-holder">
-                        </div><!--//figure-holder-->
-                        <h3 class="item-title">일하는 보람이 있는 기업</h3>
-                        <div class="item-desc mb-3">
-                            ㈜다올피플은 평가와 보상이 공정한 기업문화를 바탕으로 기술과 열정을 쏟아 부을 수 있는 일터이자, 행복하고 즐겁게 일할 수 있는 놀이공간입니다.
-                        </div><!--//item-desc-->
-                    </div><!--//item-inner-->
-                </div><!--//item-->
-            </div><!--//items-wrapper-->
-        </div><!--//container-->
-    </div><!--//about-section-->
-    
-    <div id="testimonials" class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title text-center">연혁</h2>
-            <div class="item mx-auto">
-                <div class="profile-holder">
-                    <h2>2023</h2>
-                </div>
-                <div class="quote-holder">
-                    <blockquote class="quote">
-                        <p>
-					2023.09  LF POS 시스템 개선 <br>
-					2023.08  한진 원클릭Pro 시스템 개발 <br>
-					2023.06  한진 체적관리/협력사관리 시스템 개선 <br>
-					2023.01  현대오토에버 유럽 Online Sales System 유지보수 <br>
-					2023.01  LX판토스 WM / TM 모바일 시스템 유지보수					
-                        </p>
-                    </blockquote>
-                </div><!--//quote-holder-->
-            </div><!--//item-->	
-            <div class="item mx-auto">
-                <div class="profile-holder">
-                    <h2>2022</h2>
-                </div>
-                <div class="quote-holder">
-                    <blockquote class="quote">
-                        <p>
-					2022.04  CJ푸드빌 뚜레쥬르 브랜드App 구축 <br>
-					2022.03  CJ대한통운 Next WMS 모바일 구축 <br>
-					2022.02  삼성닷컴 쇼핑몰 유지보수 <br>
-					2022.02  현대오토에버 유럽 Online Sales System 구축 <br>
-					2022.02  현대오토에버 유럽 DIH / IDM 시스템 유지보수 <br>
-					2022.01  LX판토스 TMS 모바일 시스템 구축						
-                        </p>
-                    </blockquote>
-                </div><!--//quote-holder-->
-            </div><!--//item-->	
-            <div class="item mx-auto">
-                <div class="profile-holder">
-                    <h2>2021</h2>
-                </div>
-                <div class="quote-holder">
-                    <blockquote class="quote">
-                        <p>
-				2021.12  LX판토스 글로벌 템플릿 시스템 구축 <br>
-				2021.12  빅솔론 WEBASP 시스템 구축 <br>
-				2021.11  한진 화주포탈 시스템 구축 <br>
-				2021.08  LG 물류공상평 물류/배송 모바일 시스템 구축 <br>
-				2021.08  한진 계약정산 시스템 구축 <br>
-				2021.06  IR큐더스 주주배당 시스템 구축 <br>
-				2021.05  HME IDM for CTB(통합계정관리 시스템 유지보수) <br>
-				2021.05  GS리테일 MD 계약 및 자동정산 시스템 고도화 <br>
-				2021.04  HME Online Sales System Mockup <br>
-				2021.04  ebay 옥션 주문번호 변경 개발 <br>
-				2021.03  GS리테일 유통기한 임박상품 판매시스템 개발 <br>
-				2021.01  홈플러스 Smart Delivery System App 유지보수
-                        </p>
-                    </blockquote>
-                </div><!--//quote-holder-->
-            </div><!--//item-->			
-            <div class="item mx-auto">
-                <div class="profile-holder">
-                    <h2>2020</h2>
-                </div>
-                <div class="quote-holder">
-                    <blockquote class="quote">
-                        <p>
-			    2020.11  홈플러스 배송App 시스템 유지보수 <br>
-			    2020.11  홈플러스 제휴사이트 시스템 유지보수 <br>
-			    2020.05  홈플러스 네이버 장보기 연동 개발 <br>
-                            2020.04  ㈜다올피플로 상호변경 <br>
-                            2020.01  세스코 현장경영 관련 시스템 유지보수
-                        </p>
-                    </blockquote>
-                </div><!--//quote-holder-->
-            </div><!--//item-->
-            <div class="item mx-auto">
-                <div class="profile-holder">
-                    <h2>2019</h2>
-                </div>
-                <div class="quote-holder">
-                    <blockquote class="quote">
-                        <p>
-                            2019.10  쿠쿠전자 영업관리시스템 개발 <br>
-                            2019.04  세스코 FS ACT 모바일 앱 시스템 개발  <br> 
-                            2019.01  세스코 현장경영 관련 시스템 유지보수
-                        </p>
-                    </blockquote>
-                </div><!--//quote-holder-->
-            </div><!--//item-->
-            <div class="item mx-auto">
-                <div class="profile-holder">
-                    <h2>2018</h2>
-                </div>
-                <div class="quote-holder">
-                    <blockquote class="quote">
-                        <p>
-                            2018.12  홈플러스 EOS 대상 시스템 업그레이드 <br>
-                            2018.10  한국후지쯔 BGF채권관리 BPM 추가 개발 <br> 
-                            2018.08  동진산업 Groupware Solutions 유지보수 <br>
-                            2018.05  SPC HappyTaster Sensory DB 구축 <br>
-                            2018.03  SPC B2B 배송시스템 유지보수 <br>
-                            2018.03  SPC 맥분DB분석 시스템 유지보수 <br>
-                            2018.03  SPC 점포이력관리 시스템 유지보수 <br>
-                            2018.03  ㈜엘앤이케이솔루션 법인 설립 <br>
-                        </p>
-                    </blockquote>
-                </div><!--//quote-holder-->
-            </div><!--//item-->
-            <div class="text-center mt-4">
-            </div>
-        </div><!--//container-->
-    </div><!--//testimonials-->
-
-    <div id="features" class="features-section" style="padding-bottom:0px">
-        <div class="container text-center">
-            <h2 class="section-title">사업분야</h2>
-            <div class="">
-                <img class="img-fluid" src="assets/images/dopp-사업분야.png" alt="screenshot" >
-        </div><!--//container-->
-    </div><!--//features-->
-
-    <div id="daolnews" class="daolnews-section" style="padding-bottom:0px"></div>
-        <div class="container text-center">
-            <h2 class="section-title">다올 소식</h2>
-            <div class="contact-content">
-                <div class='youtube-container'>
-                    <iframe src='https://www.youtube.com/embed/NggUxeIIPwA' frameborder='0' allowfullscreen></iframe>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="https://magazine.hankyung.com/job-joy/article/202209135971d" target="_blank"><strong>[2022 광운대 스타트업 CEO] 유통 웹·모바일 시스템 구축하는 스타트업 ‘다올피플’</strong></a></li><br/>
-                        <li><a href="https://www.fnnews.com/news/202111070518248853" target="_blank"><strong>구리시 청년창업 유망 스타트업 ‘쑥쑥’…지원다채</strong></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div><!--//container-->
-    </div><!--//daolnews-->
-
-
-    <div id="map" class="team-section">
-        <div class="container text-center">
-            <h2 class="section-title">오시는길</h2>
-            <div class="contact-content" style="max-width: none;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.90525884602!2d127.14086470000002!3d37.60438870000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb0b3e63f19db%3A0xfb2c7573eb1e2f4c!2z6rK96riw64-EIOq1rOumrOyLnCDqsbTsm5DrjIDroZwzNOuyiOq4uCA5!5e0!3m2!1sko!2skr!4v1713188250297!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p align="left">
-                    <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;경기도 구리시 건원대로 34번길 9, 6층 604호(인창동, 세신리빙프라자)
-                </p>
-                <p align="left">
-                    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;0507-1410-7901
-                </p>
-                <p align="left">
-                    <i class="far fa-envelope"></i> dopp@dopp.co.kr
-                </p>
-            </div>
-        </div><!--//container-->
-    </div><!--//contact-section-->
-    
-    <div id="contact" class="contact-section">
-        <div class="container text-center">
-            <h2 class="section-title">문의하기</h2>
-            <div class="contact-content">
-                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/xknqokvd" method="post">
-                    <fieldset id="fs-frm-inputs">
-                      <label for="email-address">답변 받을 메일</label>
-                      <input type="email" name="_replyto" id="email-address" placeholder="yourname@domain" required="" style="width: 100%;">
-                      <br>
-                      <label for="message">문의 내용</label>
-                      <textarea rows="5" name="message" id="message" placeholder="문의 내용" required="" style="width: 100%;"></textarea>
-                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                    </fieldset>
-                    <input class="btn btn-cta btn-primary" type="submit" value="문의하기">
-                  </form>
-                
-            </div>
-        </div><!--//container-->
-    </div><!--//contact-section-->
-    
-    
-    <footer class="footer text-center">
-        <div class="container">
-            <small class="copyright">Copyright(c) 2020 DAOL-People Co., Ltd</small><br>
-            <small class="copyright">(주)다올피플 | 사업자등록번호 525-86-00992</small><br>
-            <small class="copyright">경기도 구리시 건원대로 34번길 9, 6층 604호(인창동, 세신리빙프라자)</small><br>
-            <small class="copyright">대표번호 0507-1410-7901 | E-MAIL dopp@dopp.co.kr</small><br>
-	    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <!-- <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small> -->
-        </div><!--//container-->
-    </footer>
-     
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>     
-    <script type="text/javascript" src="assets/js/main.js"></script> 
-    <script>
-        $(function(){
-
-        });
-    </script>
-       
-</body>
-</html> 
-
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
