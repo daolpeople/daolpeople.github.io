@@ -30,10 +30,19 @@ import DoppBusiMobile from "@/assets/img/dopp_busi_resize.png"; // 모바일용 
 </template>
 
 <style scoped>
+/* 부모 요소를 중앙 정렬 기준으로 설정 */
+p.lead {
+  position: relative;
+  text-align: center;
+}
+
 /* 기본 이미지 스타일 */
 .responsive-img {
-  max-width: 100%;
-  height: auto;
+  max-width: 120%; /* 부모 요소보다 20% 더 넓게 설정 */
+  height: 120%;
+  display: block;
+  position: relative;
+  left: -10%; /* 120% 중 10%를 왼쪽으로 이동해 중앙에 맞춤 */
   margin-top: 40px;
 }
 </style>
