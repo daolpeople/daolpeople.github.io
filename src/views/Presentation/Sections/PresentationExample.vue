@@ -36,4 +36,12 @@ import DoppBusiMobile from "@/assets/img/dopp_busi_resize.png"; // 모바일용 
   height: auto;
   margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+  .responsive-img {
+    max-width: 120%; /* 모바일에서 적용될 이미지 크기 */
+    height: 110%;
+    margin-left: -10%;
+  }
+}
 </style>
