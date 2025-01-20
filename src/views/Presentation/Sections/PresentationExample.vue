@@ -21,7 +21,7 @@ import DoppBusiMobile from "@/assets/img/dopp_busi_resize.png"; // 모바일용 
             <!-- 웹 해상도에서 사용할 이미지 -->
             <source media="(min-width: 769px)" srcset="~@/assets/img/dopp-busi.png" type="image/png">
             <!-- 기본 이미지 (브라우저가 <source>를 지원하지 않을 경우 사용) -->
-            <img :src="DoppBusiWeb" alt="사업 분야 이미지." class="responsive-img" />
+            <img :src="DoppBusiWeb" alt="사업 분야 이미지" class="responsive-img" />
           </picture>
         </p>
       </div>

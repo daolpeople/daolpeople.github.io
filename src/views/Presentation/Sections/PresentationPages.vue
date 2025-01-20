@@ -24,6 +24,25 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
             <div class="col-md-4 mt-md-0 mt-5">
               <ExampleCard
                 class="shadow-lg"
+                title="다산2동 취약계층에 설맞이 라면 후원, 구리중앙라이온스클럽 & (주)다올피플 엄동현 대표이사"
+                image="https://cdn.f-t.kr/news/photo/202501/12132_13645_4314.jpeg"
+                link="https://blog.naver.com/2580press/223729073632"
+              />
+            </div>
+
+
+            <div class="col-md-4 mt-md-0 mt-5">
+              <ExampleCard
+                class="shadow-lg"
+                title="구리시 동구동에 추석맞이 후원물품 전달, 구리중앙라이온스클럽 & (주)다올피플 엄동현 대표이사"
+                image="http://www.gheadline.co.kr/data/photos/portnews/202409/20240913170944-77601.jpg"
+                link="http://www.gheadline.co.kr/news/article.html?no=399533"
+              />
+            </div>
+
+            <div class="col-md-4 mt-md-0 mt-5">
+              <ExampleCard
+                class="shadow-lg"
                 title="구리중앙라이온스클럽 & (주)다올피플 엄동현 대표이사 구리시립노인요양원에 2024년 설맞이 후원"
                 image="https://policetimes.co.kr/wys2/file_attach/2024/03/06/1709728150-10.jpg"
                 link="https://policetimes.co.kr/detail.php?number=149318&thread=23"

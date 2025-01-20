@@ -10,6 +10,21 @@ import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
         <!-- 연혁 내용 -->
         <div class="full-width w-100">
           <div class="row">
+
+            <div class="col-md-4 mb-4">
+              <div class="about-us-option-container">
+                <AboutUsOption
+                  iconNumber="2024"
+                  content="12 한진택배 수지배부 시스템 개선<br />
+                    <span class='indented'>09 대한항공 RSES 시스템 개발</span><br />
+                    <span class='indented'>06 한진 원클릭 시스템 운영</span><br />
+                    <span class='indented'>01 한진 원클릭Pro 시스템 2차 개발</span><br />
+                    <span class='indented'>01 현대오토에버 유럽 Online Sales System 유지보수</span><br />
+                    <span class='indented'>01 LX판토스 WM / TM 모바일 시스템 유지보수</span>"
+                />
+              </div>
+            </div>
+
             <div class="col-md-4 mb-4">
               <div class="about-us-option-container">
                 <AboutUsOption
@@ -156,7 +171,7 @@ import AboutUsOption from "@/views/LandingPages/components/AboutUsOption.vue";
   justify-content: center;
   align-items: center;
   height: 100px; /* 기본 이미지 컨테이너 높이 */
-  padding: 10px; /* 이미지 주변 여백 추가 */
+  //padding: 10px; /* 이미지 주변 여백 추가 */
 }
 
 .image-container img {
