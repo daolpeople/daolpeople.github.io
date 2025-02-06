@@ -105,7 +105,7 @@ onMounted(() => {
 
 .card-image {
   width: 100%;
-  height: 100%; /* 이미지의 고정 높이 */
+  height: 250px; /* 이미지의 고정 높이 */
   object-fit: cover; /* 이미지 비율 유지 및 자르기 */
 }
 

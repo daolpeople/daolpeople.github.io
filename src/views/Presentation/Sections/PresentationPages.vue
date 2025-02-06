@@ -21,7 +21,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
         <div class="col-md-12">
           <div class="row mt-4">
 
-            <div class="col-md-4 mt-md-0 mt-5">
+            <div class="col-md-4 mt-md-0 mt-5 h-100">
               <ExampleCard
                 class="shadow-lg"
                 title="다산2동 취약계층에 설맞이 라면 후원, 구리중앙라이온스클럽 & (주)다올피플 엄동현 대표이사 2025.01.17"
@@ -31,7 +31,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
             </div>
 
 
-            <div class="col-md-4 mt-md-0 mt-5">
+            <div class="col-md-4 mt-md-0 mt-5 h-100">
               <ExampleCard
                 class="shadow-lg"
                 title="구리시 동구동에 추석맞이 후원물품 전달, 구리중앙라이온스클럽 & (주)다올피플 엄동현 대표이사 2024.09.13"
@@ -40,7 +40,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
               />
             </div>
 
-            <div class="col-md-4 mt-md-0 mt-5">
+            <div class="col-md-4 mt-md-0 mt-5 h-100">
               <ExampleCard
                 class="shadow-lg"
                 title="구리중앙라이온스클럽 & (주)다올피플 엄동현 대표이사 구리시립노인요양원에 2024년 설맞이 후원 2024.03.06"
@@ -49,7 +49,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
               />
             </div>
 
-            <div class="col-md-4 mt-md-0 mt-5">
+            <div class="col-md-4 mt-md-0 mt-5 h-100">
               <ExampleCard
                 class="shadow-lg"
                 title="구리 다올피플, 복지취약계층 후원금 인창동 행복센터에 전달 2023.01.02"
@@ -58,7 +58,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
               />
             </div>
 
-            <div class="col-md-4 mt-md-0 mt-5">
+            <div class="col-md-4 mt-md-0 mt-5 h-100">
               <ExampleCard
                 class="shadow-lg"
                 title="[2022 광운대 스타트업 CEO] 유통 웹·모바일 시스템 구축하는 스타트업 ‘다올피플’ 2022.09.13"
@@ -67,7 +67,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
               />
             </div>
 
-            <div class="col-md-4 mt-md-0 mt-5">
+            <div class="col-md-4 mt-md-0 mt-5 h-100">
               <ExampleCard
                 class="shadow-lg"
                 title="구리시 청년창업 유망 스타트업 ‘쑥쑥’…지원다채 2021.11.07"
@@ -76,7 +76,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
               />
             </div>
 
-            <div class="col-md-4 mt-md-0 mt-5">
+            <div class="col-md-4 mt-md-0 mt-5 h-100">
               <ExampleCard
                 class="shadow-lg"
                 title="꾸준히 성장하는 유통 플랫폼 마케팅·판매·물류·배송·고객 관리 유통 IT 서비스 개발 기업 다올피플 엄동현 대표 / 혁신성장코리아 / 한국경제TV 2022.09.03"
@@ -85,7 +85,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
               />
             </div>
 
-            <div class="col-md-4 mt-md-0 mt-5">
+            <div class="col-md-4 mt-md-0 mt-5 h-100">
               <ExampleCard
                 class="shadow-lg"
                 title="구리시 청년창업지원센터 2022년 성과공유회 개최 2022.11.21"
@@ -94,7 +94,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
               />
             </div>
 
-            <div class="col-md-4 mt-md-0 mt-5">
+            <div class="col-md-4 mt-md-0 mt-5 h-100">
               <ExampleCard
                 class="shadow-lg"
                 title="n년 사이에 10배 매출 성장한 유통IT 전문기업 (feat. (주)다올피플 엄동현 대표) 2022.12.16"
@@ -102,7 +102,6 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
                 link="https://www.youtube.com/watch?v=hEvPKEZbh-8"
               />
             </div>
-
 
           </div>
         </div>
