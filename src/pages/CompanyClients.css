@@ -1,0 +1,136 @@
+/* 고객사 페이지 스타일 */
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+}
+
+.client-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  color: #94a3b8;
+  font-weight: 700;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.client-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), rgba(37, 99, 235, 0.3));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12);
+}
+
+.client-card:hover::before {
+  opacity: 1;
+}
+
+.client-logo {
+  width: 180px;
+  height: 64px;
+  object-fit: contain;
+  margin: 0 auto;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.client-card:hover .client-logo {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.client-message {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(37, 99, 235, 0.01) 100%);
+  border-radius: 16px;
+}
+
+.client-message p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text);
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+.client-message p:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 0;
+}
+
+.client-message p:last-child {
+  margin-bottom: 0;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 900px) {
+  .client-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+  }
+
+  .client-card {
+    padding: 24px 20px;
+    min-height: 140px;
+  }
+
+  .client-logo {
+    width: 140px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .client-card {
+    min-height: 120px;
+    padding: 20px;
+  }
+
+  .client-logo {
+    max-height: 48px;
+  }
+
+  .client-message {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    padding: 24px 16px;
+  }
+
+  .client-message p {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+  .client-message p:first-child {
+    font-size: 17px;
+  }
+}
+

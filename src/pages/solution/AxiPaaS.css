@@ -1,0 +1,252 @@
+@import './solutionCommon.css';
+
+/* 이데아텍 iPaaS — Deep Blue + White, 엔터프라이즈 신뢰감 */
+.axipaas-page {
+  --ax-deep: #0f172a;
+  --ax-blue: #1e40af;
+  --ax-accent: #3b82f6;
+  --ax-white: #ffffff;
+  --ax-bg: #f8fafc;
+  --ax-muted: #64748b;
+}
+
+/* 1. Hero — 흰 배경, 문구 강조 */
+.axipaas-hero {
+  position: relative;
+  padding: 140px 24px 120px;
+  text-align: center;
+  background: #fff;
+}
+
+.axipaas-hero-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.axipaas-hero-label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--ax-accent);
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+.axipaas-hero-title {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  color: var(--ax-deep);
+  margin: 0 0 24px;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+
+.axipaas-hero-title-accent {
+  display: inline-block;
+  color: var(--ax-accent);
+  background: linear-gradient(135deg, var(--ax-accent), #1d4ed8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.axipaas-hero-desc {
+  font-size: 19px;
+  color: var(--ax-muted);
+  margin: 0;
+  line-height: 1.8;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* 2. Why iPaaS? */
+.axipaas-why {
+  padding: 96px 24px 96px;
+  background: var(--ax-white);
+}
+
+.axipaas-why-image-wrap {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.axipaas-why-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  display: block;
+}
+
+/* 02·04 묶음: 02는 작게, 04는 02에 거의 붙게. 05는 wrap 직계로 03과 같은 크기·간격 */
+.axipaas-why-image-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.axipaas-why-image-02 {
+  max-width: 78%;
+  width: 78%;
+}
+
+.axipaas-why-image-05 {
+  max-width: 75%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.axipaas-section-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--ax-deep);
+  text-align: center;
+  margin: 0 0 48px;
+  letter-spacing: -0.02em;
+}
+
+/* ipaas-01 이미지 — 구축 사례 위 */
+.axipaas-image-section {
+  padding: 80px 24px 56px;
+  background: #fff;
+}
+
+.axipaas-image-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.axipaas-image-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+
+}
+
+/* 3. Success Stories */
+.axipaas-stories {
+  padding: 80px 24px 96px;
+  background: var(--ax-bg);
+}
+
+.axipaas-stories .axipaas-section-title {
+  font-size: 32px;
+  margin-bottom: 56px;
+}
+
+.axipaas-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.axipaas-story-card {
+  padding: 36px 32px;
+  background: var(--ax-white);
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.axipaas-story-sector {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ax-accent);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.axipaas-story-client {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ax-deep);
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.axipaas-story-desc {
+  font-size: 16px;
+  color: var(--ax-muted);
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* CTA */
+/* 반응형 */
+@media (max-width: 900px) {
+  .axipaas-stories .axipaas-section-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .axipaas-stories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .axipaas-story-card {
+    padding: 28px 24px;
+  }
+
+  .axipaas-story-client {
+    font-size: 20px;
+  }
+
+  .axipaas-story-desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .axipaas-hero {
+    padding: 100px 20px 80px;
+  }
+
+  .axipaas-stories {
+    padding: 56px 20px 72px;
+  }
+
+  .axipaas-stories .axipaas-section-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .axipaas-stories-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .axipaas-story-card {
+    padding: 24px 20px;
+  }
+
+  .axipaas-story-sector {
+    font-size: 13px;
+  }
+
+  .axipaas-story-client {
+    font-size: 18px;
+  }
+
+  .axipaas-story-desc {
+    font-size: 14px;
+  }
+}

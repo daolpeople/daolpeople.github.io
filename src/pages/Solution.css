@@ -1,0 +1,1278 @@
+/* 솔루션 페이지 스타일 */
+.solution-page-section {
+  background: #fff;
+  padding: 0;
+}
+
+/* 솔루션 페이지 제목 */
+.solution-page-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 40px 0 20px;
+  letter-spacing: -0.5px;
+}
+
+/* 솔루션 탭 버튼 스타일 */
+.solution-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px 0 60px;
+  padding: 0 20px;
+}
+
+.solution-tab {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--muted);
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.solution-tab:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.solution-tab.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* 솔루션 소개 섹션 */
+.solution-intro {
+  text-align: center;
+  padding: 80px 0 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.solution-intro-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 24px;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+.solution-intro-subtitle-main {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.solution-intro-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0 0 32px;
+  line-height: 1.4;
+}
+
+.solution-intro-desc {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+
+}
+
+.solution-intro-detail {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.solution-intro-detail .solution-intro-subtitle-main {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* 솔루션 소개 히어로 섹션 (이미지 + 텍스트 좌우 배치) */
+.solution-intro-hero {
+  display: grid;
+  gap: 80px;
+  align-items: center;
+  padding: 80px 0;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* MAXY Front Hero 레이아웃 */
+.maxy-front-hero {
+  grid-template-columns: 1.5fr 1fr;
+  max-width: 1800px;
+}
+
+/* MAXY Mobile Hero 레이아웃 */
+.maxy-mobile-hero {
+  grid-template-columns: 0.9fr 1.3fr;
+  max-width: 1600px;
+}
+
+/* MiAPS Hybrid Hero 레이아웃 */
+.miap-hybrid-hero {
+  grid-template-columns: 1fr 1fr;
+  max-width: 1600px;
+  gap: 60px;
+}
+
+.miap-hybrid-content {
+  padding: 0;
+  position: relative;
+  z-index: 10;
+  margin-top: 60px;
+}
+
+/* DATA Sence Hero 레이아웃 */
+.datasence-hero {
+  grid-template-columns: 1.3fr 1fr;
+  max-width: 1600px;
+  gap: 60px;
+}
+
+.datasence-image {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datasence-main-image {
+  width: 120%;
+  max-width: none;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+.datasence-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.datasence-content .solution-intro-title {
+  font-size: 41px;
+  font-weight: 800;
+}
+
+.datasence-content .solution-intro-title .datasence-title-highlight {
+  font-size: 1.3em;
+  font-weight: 900;
+  color: #2945A4;
+}
+
+.datasence-content.text-right .solution-intro-title,
+.datasence-content.text-right .solution-intro-desc {
+  text-align: right;
+}
+
+.datasence-content .solution-intro-desc {
+  line-height: 2;
+  letter-spacing: -0.2px;
+  margin-top: 20px;
+}
+
+.solution-intro-hero-image {
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+/* MAXY Front Image 스타일 */
+.maxy-front-image {
+  padding: 80px 120px;
+}
+
+.maxy-front-stack {
+  position: relative;
+  width: 110%;
+  height: 0;
+  padding-bottom: 85%;
+  overflow: visible;
+  margin-left: -5%;
+}
+
+/* MAXY Mobile Image 스타일 */
+.maxy-mobile-image {
+  padding: 20px 40px;
+}
+
+.maxy-mobile-stack {
+  position: relative;
+  width: 180%;
+  height: 0;
+  padding-bottom: 140%;
+  overflow: visible;
+  margin-left: -40%;
+}
+
+.solution-image-stack .stack-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.miap-hybrid-stack .stack-image {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* MAXY Front 이미지 스타일 */
+.maxy-front-stack .stack-image {
+  object-fit: cover;
+}
+
+/* MAXY Mobile 이미지 스타일 */
+.maxy-mobile-stack .stack-image {
+  object-fit: contain;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.solution-image-stack .stack-1 {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transform: translate(-5%, -5%);
+}
+
+.solution-image-stack .stack-1.stack-single {
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.solution-image-stack .stack-2 {
+  z-index: 2;
+  width: 100%;
+  height: 85%;
+  transform: translate(-60px, 10px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.solution-image-stack .stack-3 {
+  z-index: 3;
+  width: 80%;
+  height: 80%;
+  transform: translate(-100px, 150px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.solution-intro-hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* MAXY Front Content 스타일 */
+.maxy-front-content .solution-intro-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 20px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.maxy-front-content .solution-intro-subtitle-main {
+  font-size: 48px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 4px;
+  line-height: 1.5;
+}
+
+.maxy-front-content .solution-intro-name {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2945A4;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.maxy-front-content .solution-intro-desc {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+  text-align: right;
+}
+
+.maxy-front-content.text-right .solution-intro-title,
+.maxy-front-content.text-right .solution-intro-subtitle-main,
+.maxy-front-content.text-right .solution-intro-name,
+.maxy-front-content.text-right .solution-intro-desc {
+  text-align: right;
+}
+
+/* MAXY Mobile Content 스타일 */
+.maxy-mobile-content .solution-intro-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 20px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.maxy-mobile-content .solution-intro-subtitle-main {
+  font-size: 48px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 4px;
+  line-height: 1.5;
+}
+
+.maxy-mobile-content .solution-intro-name {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2945A4;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.maxy-mobile-content .solution-intro-desc {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+  text-align: right;
+}
+
+.maxy-mobile-content.text-right .solution-intro-title,
+.maxy-mobile-content.text-right .solution-intro-subtitle-main,
+.maxy-mobile-content.text-right .solution-intro-name,
+.maxy-mobile-content.text-right .solution-intro-desc {
+  text-align: right;
+}
+
+/* MiAPS Hybrid Image 스타일 */
+.miap-hybrid-image {
+  padding: 20px 40px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.miap-hybrid-stack {
+  position: relative;
+  width: 150%;
+  height: 0;
+  padding-bottom: 120%;
+  overflow: visible;
+  margin-left: -25%;
+  background: #fff;
+}
+
+.miap-hybrid-stack .stack-image {
+  object-fit: contain;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* MiAPS Hybrid 이미지 애니메이션 */
+.miap-hybrid-stack .stack-1 {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 0);
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.miap-hybrid-stack .stack-2 {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 0);
+  animation: miap-slide-down 1s ease-out 0.5s forwards;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+@keyframes miap-slide-down {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-40px, 40px);
+  }
+}
+
+/* MiAPS Hybrid Content 스타일 */
+.miap-hybrid-content .solution-intro-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 20px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.miap-hybrid-content .solution-intro-subtitle-main {
+  font-size: 48px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 4px;
+  line-height: 1.5;
+}
+
+.miap-hybrid-content .solution-intro-name {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2945A4;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.miap-hybrid-content .solution-intro-desc {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+  text-align: right;
+}
+
+.miap-hybrid-content.text-right .solution-intro-title,
+.miap-hybrid-content.text-right .solution-intro-subtitle-main,
+.miap-hybrid-content.text-right .solution-intro-name,
+.miap-hybrid-content.text-right .solution-intro-desc {
+  text-align: right;
+}
+
+/* 솔루션 FEATURE 섹션 */
+.solution-features {
+  padding: 60px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* FEATURE 카드 그리드 */
+.solution-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.solution-feature-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.solution-feature-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.solution-feature-card-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #2945A4;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 24px 24px 16px;
+  text-transform: uppercase;
+}
+
+.solution-feature-card-image {
+  width: calc(100% - 24px);
+  margin: 0 12px 12px 12px;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.solution-feature-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.solution-feature-card-list {
+  list-style: none;
+  padding: 12px 24px 24px;
+  margin: 0;
+}
+
+.solution-feature-card-list li {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1.8;
+  padding: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.solution-feature-card-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* FEATURE 기본 스타일 (AX iPaaS용) */
+.solution-feature {
+  margin-bottom: 80px;
+}
+
+.solution-feature:last-child {
+  margin-bottom: 0;
+}
+
+.solution-feature-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 1px;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+.solution-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.solution-feature-list li {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1.8;
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+}
+
+.solution-feature-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* DATA Sence 전용 스타일 */
+.solution-features-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.solution-features-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+}
+
+.solution-features-subtitle {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.datasense-features {
+  margin-bottom: 80px;
+}
+
+.datasense-feature-card {
+  text-align: center;
+  padding: 40px 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.datasense-feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
+}
+
+.datasense-feature-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+.datasense-feature-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.datasense-feature-desc {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0 0 24px;
+  flex-grow: 1;
+}
+
+.datasense-feature-card .solution-feature-card-list {
+  text-align: left;
+  padding: 0;
+  margin-top: auto;
+}
+
+.datasense-feature-card .solution-feature-card-list li {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 0;
+  padding-left: 20px;
+}
+
+.datasense-suitable {
+  margin: 80px 0;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.datasense-section-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 32px;
+  letter-spacing: -0.5px;
+}
+
+.datasense-suitable-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.datasense-suitable-list li {
+  font-size: 18px;
+  color: var(--text);
+  line-height: 1.8;
+  padding: 16px 24px;
+  margin-bottom: 12px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+  padding-left: 56px;
+}
+
+.datasense-suitable-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 24px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.datasense-suitable-list li:last-child {
+  margin-bottom: 0;
+}
+
+.datasense-intro-detail {
+  margin: 60px 0;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.datasense-intro-detail .solution-intro-desc {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.datasense-benefits {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.datasense-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.datasense-benefit-card {
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary);
+}
+
+.datasense-benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
+}
+
+.datasense-benefit-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.datasense-benefit-desc {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* 솔루션 프로세스 이미지 */
+.solution-process-image {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.solution-process-image.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.solution-process-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* MAXY Mobile 프로세스 이미지 */
+.maxy-mobile-process {
+  margin-top: 140px;
+  padding: 0 20px;
+}
+
+/* MAXY Mobile 로고 슬라이드 (thinkm.co.kr 스타일) */
+.maxy-mobile-logo-slider {
+  margin-top: 100px;
+  margin-bottom: -20px;
+  padding: 60px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.maxy-mobile-logo-slider-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin: 0 0 50px;
+  letter-spacing: -0.5px;
+}
+
+.maxy-mobile-logo-slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+.maxy-mobile-logo-slider-track {
+  display: flex;
+  gap: 40px;
+  will-change: transform;
+  width: fit-content;
+  transition: none; /* 무한 스크롤을 위해 transition 제거 */
+}
+
+.maxy-mobile-logo-item {
+  flex-shrink: 0;
+  width: 280px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maxy-mobile-logo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.maxy-mobile-logo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.maxy-mobile-logo-item:hover img {
+  transform: scale(1.05);
+}
+
+.miap-hybrid-logo-slider .maxy-mobile-logo-item {
+  width: 220px;
+  height: 130px;
+  padding: 25px;
+}
+
+/* MAXY Front 프로세스 이미지 */
+.maxy-front-process {
+  margin-top: 140px;
+  padding: 0 20px;
+}
+
+/* MiAPS Hybrid 프로세스 이미지 */
+.miap-hybrid-process {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+
+/* 솔루션 CTA 섹션 */
+.solution-cta-section {
+  width: 100vw;
+  margin-top: 80px;
+  padding: 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.solution-cta {
+  text-align: center;
+  padding: 100px 0;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('assets/images/dopp-bg-20.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.datasence-cta {
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('assets/images/reference/datasence/data-3.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.solution-cta-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 32px;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  word-break: keep-all;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.solution-cta-desc {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
+  margin: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.datasence-cta .solution-cta-desc {
+  font-size: 20px;
+  line-height: 2;
+}
+
+.miap-hybrid-cta-section {
+  width: 100vw;
+  padding: 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.miap-hybrid-cta {
+  width: 100%;
+  padding: 100px 0;
+  border-radius: 0;
+}
+
+.miap-hybrid-cta-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.miap-hybrid-cta-desc {
+  font-size: 22px;
+  line-height: 2;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 900px) {
+  .solution-page-title {
+    font-size: 36px;
+    margin: 32px 0 16px;
+  }
+
+  .solution-intro-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  .solution-intro-hero-image {
+    padding: 40px 20px;
+  }
+
+  .solution-image-stack {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 70%;
+  }
+
+  .solution-features-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .solution-cta {
+    padding: 60px 0;
+    border-radius: 16px;
+  }
+
+  .solution-cta-title {
+    font-size: 24px;
+  }
+
+  .solution-cta-desc {
+    font-size: 15px;
+  }
+
+  .datasence-cta .solution-cta-desc {
+    font-size: 19px;
+  }
+
+  .miap-hybrid-cta {
+    padding: 60px 0;
+  }
+
+  .miap-hybrid-cta-content {
+    padding: 0 24px;
+  }
+
+  .miap-hybrid-cta-desc {
+    font-size: 20px;
+  }
+
+  .solution-features-title {
+    font-size: 26px;
+  }
+
+  .solution-features-subtitle {
+    font-size: 16px;
+  }
+
+  .datasense-feature-card {
+    padding: 32px 24px;
+  }
+
+  .datasense-feature-icon {
+    font-size: 48px;
+  }
+
+  .datasense-feature-title {
+    font-size: 20px;
+  }
+
+  .datasense-suitable {
+    padding: 40px 24px;
+  }
+
+  .datasense-section-title {
+    font-size: 24px;
+  }
+
+  .datasense-suitable-list li {
+    font-size: 16px;
+    padding: 14px 20px;
+    padding-left: 48px;
+  }
+
+  .datasense-benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .datasense-benefit-card {
+    padding: 24px 20px;
+  }
+
+  .datasense-benefit-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solution-page-title {
+    font-size: 28px;
+    margin: 24px 0 16px;
+  }
+
+  .solution-tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .solution-tab {
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  .solution-intro-title {
+    font-size: 22px;
+  }
+
+  .solution-intro-subtitle-main {
+    font-size: 20px;
+  }
+
+  .solution-intro-name {
+    font-size: 18px;
+  }
+
+  .solution-intro-desc {
+    font-size: 14px;
+  }
+
+  .solution-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-cta-title {
+    font-size: 20px;
+  }
+
+  .solution-cta-desc {
+    font-size: 14px;
+  }
+
+  .datasence-cta .solution-cta-desc {
+    font-size: 18px;
+  }
+
+  .miap-hybrid-cta {
+    padding: 50px 0;
+  }
+
+  .miap-hybrid-cta-content {
+    padding: 0 20px;
+  }
+
+  .miap-hybrid-cta-desc {
+    font-size: 18px;
+  }
+
+  .solution-features-title {
+    font-size: 22px;
+  }
+
+  .solution-features-subtitle {
+    font-size: 14px;
+  }
+
+  .datasense-feature-card {
+    padding: 24px 20px;
+  }
+
+  .datasense-feature-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .datasense-feature-title {
+    font-size: 18px;
+  }
+
+  .datasense-feature-desc {
+    font-size: 14px;
+  }
+
+  .datasense-suitable {
+    padding: 32px 20px;
+    margin: 60px 0;
+  }
+
+  .datasense-section-title {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .datasense-suitable-list li {
+    font-size: 14px;
+    padding: 12px 16px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+  }
+
+  .datasense-intro-detail {
+    margin: 40px 0;
+    padding: 32px 20px;
+  }
+
+  .datasense-intro-detail .solution-intro-desc {
+    font-size: 16px;
+  }
+
+  .datasence-content .solution-intro-title {
+    font-size: 24px;
+  }
+
+  .datasence-content .solution-intro-title .datasence-title-highlight {
+    font-size: 1.3em;
+  }
+
+  .datasense-benefits {
+    margin: 60px 0;
+  }
+
+  .datasense-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .datasense-benefit-card {
+    padding: 20px 16px;
+  }
+
+  .datasense-benefit-title {
+    font-size: 16px;
+  }
+
+  .datasense-benefit-desc {
+    font-size: 13px;
+  }
+
+  .maxy-mobile-process {
+    margin-top: 100px;
+    padding: 0 16px;
+  }
+
+  .maxy-front-process {
+    margin-top: 100px;
+    padding: 0 16px;
+  }
+
+  .miap-hybrid-process {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 0 16px;
+  }
+
+  .maxy-mobile-logo-slider {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 40px 16px;
+  }
+
+  .maxy-mobile-logo-slider-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .maxy-mobile-logo-item {
+    width: 200px;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .miap-hybrid-logo-slider .maxy-mobile-logo-item {
+    width: 180px;
+    height: 110px;
+    padding: 18px;
+  }
+
+  .maxy-mobile-logo-slider-track {
+    gap: 24px;
+  }
+}
+

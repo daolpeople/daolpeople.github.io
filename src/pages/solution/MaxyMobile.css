@@ -1,0 +1,309 @@
+@import './solutionCommon.css';
+
+/* MAXY Mobile 로고 슬라이드 공통 스타일 */
+.maxy-mobile-logo-slider {
+  margin-top: 100px;
+  margin-bottom: -20px;
+  padding: 60px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.maxy-mobile-logo-slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+.maxy-mobile-logo-slider-track {
+  display: flex;
+  gap: 40px;
+  will-change: transform;
+  width: fit-content;
+  transition: none;
+}
+
+.maxy-mobile-logo-item {
+  flex-shrink: 0;
+  width: 280px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maxy-mobile-logo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.maxy-mobile-logo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.maxy-mobile-logo-item:hover img {
+  transform: scale(1.05);
+}
+
+/* MAXY Mobile Hero 레이아웃 */
+.maxy-mobile-hero {
+  grid-template-columns: 0.9fr 1.3fr;
+  max-width: 1600px;
+}
+
+.maxy-mobile-image {
+  padding: 20px 40px;
+}
+
+.maxy-mobile-stack {
+  position: relative;
+  width: 180%;
+  height: 0;
+  padding-bottom: 140%;
+  overflow: visible;
+  margin-left: -40%;
+}
+
+.maxy-mobile-stack .stack-image {
+  object-fit: contain;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* MAXY Mobile Content 스타일 */
+.maxy-mobile-content .solution-intro-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 20px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.maxy-mobile-content .solution-intro-subtitle-main {
+  font-size: 48px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 4px;
+  line-height: 1.5;
+}
+
+.maxy-mobile-content .solution-intro-name {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2945A4;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.maxy-mobile-content .solution-intro-desc {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+  text-align: right;
+}
+
+.maxy-mobile-content.text-right .solution-intro-title,
+.maxy-mobile-content.text-right .solution-intro-subtitle-main,
+.maxy-mobile-content.text-right .solution-intro-name,
+.maxy-mobile-content.text-right .solution-intro-desc {
+  text-align: right;
+}
+
+/* 퓨처스와 프로세스 이미지 사이 배너 — 맥시프론트와 동일 스타일 */
+.maxy-mobile-banner {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  padding: 56px 24px 64px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: left;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+
+.maxy-mobile-banner-inner {
+  max-width: 900px;
+}
+
+.maxy-mobile-banner-headline {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 16px;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+}
+
+.maxy-mobile-banner-headline:last-of-type {
+  margin-bottom: 20px;
+}
+
+.maxy-mobile-banner-desc {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 0 10px;
+  line-height: 1.7;
+}
+
+.maxy-mobile-banner-desc:last-child {
+  margin-bottom: 0;
+}
+
+/* MAXY Mobile 프로세스 이미지 */
+.maxy-mobile-process {
+  margin-top: 0;
+  padding: 0 20px;
+}
+
+/* MAXY Mobile 로고 슬라이드 */
+.maxy-mobile-logo-slider {
+  margin-top: 100px;
+  margin-bottom: -20px;
+  padding: 60px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.maxy-mobile-logo-slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+.maxy-mobile-logo-slider-track {
+  display: flex;
+  gap: 40px;
+  will-change: transform;
+  width: fit-content;
+  transition: none;
+}
+
+.maxy-mobile-logo-item {
+  flex-shrink: 0;
+  width: 280px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maxy-mobile-logo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.maxy-mobile-logo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.maxy-mobile-logo-item:hover img {
+  transform: scale(1.05);
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .maxy-mobile-banner {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding: 48px 20px 56px;
+  }
+
+  .maxy-mobile-banner-headline {
+    font-size: 22px;
+  }
+
+  .maxy-mobile-banner-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .maxy-mobile-banner {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    padding: 40px 16px 48px;
+    background-attachment: scroll;
+  }
+
+  .maxy-mobile-banner-headline {
+    font-size: 18px;
+  }
+
+  .maxy-mobile-banner-desc {
+    font-size: 13px;
+  }
+
+  .maxy-mobile-process {
+    padding: 0 16px;
+  }
+
+  .maxy-mobile-logo-slider {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 40px 16px;
+  }
+
+  .maxy-mobile-logo-item {
+    width: 200px;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .maxy-mobile-logo-slider-track {
+    gap: 24px;
+  }
+}
+

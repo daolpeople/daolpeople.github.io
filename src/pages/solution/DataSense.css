@@ -1,0 +1,928 @@
+@import './solutionCommon.css';
+
+/* DATA Sence Hero 레이아웃 */
+.datasence-hero {
+  grid-template-columns: 1.3fr 1fr;
+  max-width: 1600px;
+  gap: 60px;
+}
+
+.datasence-image {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datasence-main-image {
+  width: 120%;
+  max-width: none;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+.datasence-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.datasence-content .solution-intro-title {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.datasence-content .solution-intro-title .datasence-title-highlight {
+  font-size: 1.3em;
+  font-weight: 900;
+  color: #2945A4;
+  white-space: nowrap;
+}
+
+.datasence-content.text-right .solution-intro-title,
+.datasence-content.text-right .solution-intro-desc {
+  text-align: right;
+}
+
+.datasence-content .solution-intro-desc {
+  font-size: 22px;
+  line-height: 2;
+  letter-spacing: -0.2px;
+  margin-top: 20px;
+}
+
+/* DATA Sence 전용 스타일 */
+.solution-features-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.solution-features-header--below {
+  margin-top: 80px;
+  margin-bottom: 0;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.solution-features-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+}
+
+.solution-features-subtitle {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Data Sense 카드 섹션 — 사업분야 "이런 고민" 스타일 (배경 이미지 없음) */
+.datasense-target-section {
+  margin-top: 72px;
+  margin-bottom: 80px;
+  padding: 48px 24px 64px;
+  background: #f1f5f9;
+  border-radius: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+
+.datasense-target-section-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1e293b;
+  text-align: center;
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.datasense-target-section-lead {
+  text-align: center;
+  font-size: 20px;
+  color: #1e293b;
+  margin: 0 0 40px;
+  font-weight: 600;
+}
+
+.datasense-target-types-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.datasense-target-type-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 26px 22px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.datasense-target-type-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+}
+
+.datasense-target-type-card--blue:hover { border-color: #3b82f6; box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25), 0 12px 32px rgba(59, 130, 246, 0.15); }
+.datasense-target-type-card--purple:hover { border-color: #7c3aed; box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.25), 0 12px 32px rgba(124, 58, 237, 0.15); }
+.datasense-target-type-card--green:hover { border-color: #10b981; box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25), 0 12px 32px rgba(16, 185, 129, 0.15); }
+
+.datasense-target-type-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border-radius: 50%;
+  background: #f1f5f9;
+}
+
+.datasense-target-type-card--blue .datasense-target-type-icon { background: rgba(59, 130, 246, 0.12); }
+.datasense-target-type-card--purple .datasense-target-type-icon { background: rgba(124, 58, 237, 0.12); }
+.datasense-target-type-card--green .datasense-target-type-icon { background: rgba(16, 185, 129, 0.12); }
+
+.datasense-target-type-label {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.datasense-target-type-card--blue .datasense-target-type-label { color: #2563eb; }
+.datasense-target-type-card--purple .datasense-target-type-label { color: #6d28d9; }
+.datasense-target-type-card--green .datasense-target-type-label { color: #059669; }
+
+.datasense-target-type-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.datasense-target-type-quote {
+  font-size: 20px;
+  color: #334155;
+  font-style: italic;
+  margin: 0 0 14px;
+  line-height: 1.5;
+}
+
+.datasense-target-type-problem-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #334155;
+  margin: 0 0 8px;
+}
+
+.datasense-target-type-problem-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.datasense-target-type-problem-box span {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+.datasense-target-type-problem-box span + span {
+  margin-top: 6px;
+}
+
+.datasense-target-type-solution-label {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 8px;
+}
+
+.datasense-target-type-solution-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  text-align: center;
+}
+
+.datasense-target-type-solution-list li {
+  font-size: 22px;
+  font-weight: 500;
+  color: #334155;
+  line-height: 1.6;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.datasense-target-type-check {
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.datasense-target-type-card--blue .datasense-target-type-check { color: #2563eb; }
+.datasense-target-type-card--purple .datasense-target-type-check { color: #6d28d9; }
+.datasense-target-type-card--green .datasense-target-type-check { color: #059669; }
+
+.datasense-target-type-value-badge {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 12px 14px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid;
+  color: #1e293b;
+}
+
+.datasense-target-type-card--blue .datasense-target-type-value-badge { background: rgba(59, 130, 246, 0.08); border-color: rgba(59, 130, 246, 0.35); }
+.datasense-target-type-card--purple .datasense-target-type-value-badge { background: rgba(124, 58, 237, 0.08); border-color: rgba(124, 58, 237, 0.35); }
+.datasense-target-type-card--green .datasense-target-type-value-badge { background: rgba(16, 185, 129, 0.08); border-color: rgba(16, 185, 129, 0.35); }
+
+.datasense-features {
+  margin-top: 72px;
+  margin-bottom: 80px;
+  /* 카드 높이 통일 — 세 카드 모두 동일 높이 */
+  grid-template-rows: 520px;
+}
+
+.datasense-feature-card {
+  text-align: center;
+  padding: 0;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  transition: all 0.3s ease;
+  min-height: 520px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.datasense-feature-card .datasense-feature-overlay {
+  bottom: 0;
+}
+
+.datasense-feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.datasense-feature-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 40px 32px;
+  padding-bottom: 60px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.8) 100%);
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(1px);
+  align-items: flex-start;
+}
+
+.datasense-feature-card-1 {
+  background-size: 85% !important;
+}
+
+.datasense-feature-overlay-1 {
+  top:50px;
+  bottom: auto;
+}
+
+.datasense-feature-overlay-1 .datasense-feature-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.datasense-feature-card-2 {
+  background-size: 85% !important;
+}
+
+.datasense-feature-overlay-2 {
+  top: 50px;
+  bottom: auto;
+}
+
+.datasense-feature-overlay-2 .datasense-feature-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.datasense-feature-card-3 {
+  background-size: 85% !important;
+}
+
+.datasense-feature-overlay-3 {
+  top: 50px;
+  bottom: auto;
+}
+
+.datasense-feature-overlay-3 .datasense-feature-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.datasense-feature-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+.datasense-feature-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 20px;
+  padding: 0;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+  position: relative;
+  z-index: 3;
+  min-height: 68px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.datasense-feature-desc {
+  font-size: 20px;
+  color: var(--text);
+  line-height: 1.9;
+  margin: 0 0 24px;
+  flex-grow: 1;
+  text-align: center;
+  word-break: keep-all;
+  position: relative;
+  z-index: 3;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  max-width: 100%;
+}
+
+.datasense-feature-card .solution-feature-card-list {
+  text-align: left;
+  padding: 0;
+  margin-top: auto;
+  position: relative;
+  z-index: 3;
+}
+
+.datasense-feature-card .solution-feature-card-list li {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 0;
+  padding-left: 24px;
+  line-height: 1.6;
+  word-break: keep-all;
+  position: relative;
+  color: var(--text);
+}
+
+.datasense-suitable {
+  margin: 80px 0;
+  padding: 60px 40px 72px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1e3a5f 100%);
+  border-radius: 0;
+  text-align: center;
+  /* 배경만 좌우 꽉 차게 */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+
+.datasense-suitable .datasense-section-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 48px;
+  letter-spacing: -0.5px;
+}
+
+.datasense-section-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 32px;
+  letter-spacing: -0.5px;
+}
+
+.datasense-suitable-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.datasense-suitable-card {
+  background: #e8ecf4;
+  border-radius: 20px;
+  padding: 36px 28px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.datasense-suitable-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.datasense-suitable-card-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px;
+  color: #1e293b;
+  flex-shrink: 0;
+}
+
+.datasense-suitable-card-icon svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.datasense-suitable-card-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 16px;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
+
+.datasense-suitable-card-desc {
+  font-size: 15px;
+  color: #334155;
+  line-height: 1.75;
+  margin: 0;
+  word-break: keep-all;
+}
+
+/* Data Sense란? — 사업분야 Deep Navy 배너와 동일 배경 */
+.datasense-intro-detail {
+  margin: 60px 0;
+  padding: 56px 40px 64px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1e3a5f 100%);
+  border-radius: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /* 컨테이너 밖으로 배경만 좌우 꽉 차게 */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+
+.datasense-intro-detail .datasense-section-title {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.datasense-intro-detail-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 40px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%);
+  width: 100%;
+  backdrop-filter: blur(2px);
+}
+
+.datasense-intro-detail .solution-intro-desc {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 25px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Data Sense, 왜 특별할까요? 카드 밑 이미지 (data-9) */
+.datasense-features-image {
+  margin-top: 48px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.datasense-features-image-img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* 도입 효과 — 섹션 배경 흰색, 카드 상단 연회색·하단 진파랑+아이콘 */
+.datasense-benefits {
+  margin: 96px 0 40px;
+  padding: 80px 32px 56px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.datasense-benefits .datasense-section-title {
+  color: var(--text);
+  font-size: 32px;
+  margin-bottom: 56px;
+}
+
+.datasense-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.datasense-benefit-card {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.datasense-benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.datasense-benefit-card-content {
+  padding: 40px 32px 44px;
+  background: linear-gradient(180deg, #e8ecf4 0%, #dde2eb 100%);
+  text-align: center;
+  flex: 1;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.datasense-benefit-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 16px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.datasense-benefit-desc {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.7;
+  margin: 0;
+  text-align: center;
+  word-break: keep-all;
+  letter-spacing: -0.2px;
+}
+
+/* DATA Sence CTA — 배경 이미지는 JSX에서 asset('data-03.png')로 적용 */
+.solution-cta-section.datasence-cta-section {
+  margin-top: 0;
+}
+
+.datasence-cta {
+  background-color: #1e293b;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.datasence-cta .solution-cta-desc {
+  font-size: 20px;
+  line-height: 2;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .datasence-cta .solution-cta-desc {
+    font-size: 19px;
+  }
+
+  .solution-features-title {
+    font-size: 26px;
+  }
+
+  .solution-features-subtitle {
+    font-size: 16px;
+  }
+
+  .datasense-target-section {
+    padding: 40px 20px 56px;
+  }
+
+  .datasense-target-section-title {
+    font-size: 28px;
+  }
+
+  .datasense-target-section-lead {
+    margin-bottom: 32px;
+  }
+
+  .datasense-target-types-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .datasense-features {
+    grid-template-rows: auto;
+  }
+
+  .datasense-feature-card {
+    min-height: 450px;
+  }
+
+  .datasense-feature-overlay {
+    padding: 32px 24px;
+    padding-bottom: 50px;
+    transform: translateY(-60px);
+  }
+
+  .datasense-feature-icon {
+    font-size: 48px;
+  }
+
+  .datasense-feature-title {
+    font-size: 20px;
+  }
+
+  .datasense-suitable {
+    padding: 40px 24px 56px;
+  }
+
+  .datasense-suitable .datasense-section-title {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  .datasense-suitable-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .datasense-suitable-card {
+    padding: 28px 24px 32px;
+  }
+
+  .datasense-suitable-card-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+  }
+
+  .datasense-suitable-card-title {
+    font-size: 18px;
+  }
+
+  .datasense-suitable-card-desc {
+    font-size: 14px;
+  }
+
+  .datasense-section-title {
+    font-size: 24px;
+  }
+
+  .datasense-benefits .datasense-section-title {
+    font-size: 28px;
+    margin-bottom: 44px;
+  }
+
+  .datasense-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .datasense-benefit-card-content {
+    padding: 32px 24px 36px;
+    min-height: 160px;
+  }
+
+  .datasense-benefit-title {
+    font-size: 20px;
+  }
+
+  .datasense-benefit-desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .datasense-target-section {
+    margin-top: 48px;
+    margin-bottom: 56px;
+    padding: 32px 16px 48px;
+  }
+
+  .datasense-target-section-title {
+    font-size: 22px;
+  }
+
+  .datasense-target-section-lead {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .datasense-target-type-card {
+    padding: 22px 18px;
+  }
+
+  .datasense-target-type-title {
+    font-size: 22px;
+  }
+
+  .datasense-target-type-quote,
+  .datasense-target-type-solution-list li,
+  .datasense-target-type-value-badge {
+    font-size: 15px;
+  }
+
+  .datasense-target-type-label,
+  .datasense-target-type-problem-label,
+  .datasense-target-type-solution-label {
+    font-size: 15px;
+  }
+
+  .datasense-target-type-problem-box span {
+    font-size: 15px;
+  }
+  .datasence-cta .solution-cta-desc {
+    font-size: 18px;
+  }
+
+  .solution-features-title {
+    font-size: 22px;
+  }
+
+  .solution-features-subtitle {
+    font-size: 14px;
+  }
+
+  .datasense-feature-card {
+    min-height: 400px;
+  }
+
+  .datasense-feature-overlay {
+    padding: 24px 20px;
+    padding-bottom: 40px;
+    transform: translateY(-40px);
+  }
+
+  .datasense-feature-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .datasense-feature-title {
+    font-size: 18px;
+  }
+
+  .datasense-feature-desc {
+    font-size: 20px;
+  }
+
+  .datasense-suitable {
+    padding: 32px 16px 48px;
+    margin: 60px 0;
+  }
+
+  .datasense-suitable .datasense-section-title {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+
+  .datasense-suitable-card {
+    padding: 24px 20px 28px;
+  }
+
+  .datasense-suitable-card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+
+  .datasense-suitable-card-title {
+    font-size: 17px;
+  }
+
+  .datasense-suitable-card-desc {
+    font-size: 13px;
+  }
+
+  .datasense-section-title {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .datasense-intro-detail {
+    margin: 40px 0;
+    padding: 40px 24px 48px;
+  }
+
+  /* Data Sense란? 제목만 24px (일반 section-title과 분리) */
+  .datasense-intro-detail h3.datasense-section-title {
+    font-size: 24px;
+  }
+
+  .datasense-intro-detail-content {
+    padding: 40px 24px;
+  }
+
+  .datasense-intro-detail .solution-intro-desc {
+    font-size: 18px;
+  }
+
+  .datasense-features-image {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    padding: 0 16px;
+  }
+
+  .datasense-features-image-img {
+    border-radius: 8px;
+  }
+
+  .datasence-content .solution-intro-title {
+    font-size: 24px;
+  }
+
+  .datasence-content .solution-intro-title .datasence-title-highlight {
+    font-size: 1.3em;
+  }
+
+  .datasence-content .solution-intro-desc {
+    font-size: 18px;
+  }
+
+  .datasense-benefits {
+    margin: 64px 0 32px;
+    padding: 56px 20px 48px;
+  }
+
+  .datasense-benefits .datasense-section-title {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  .datasense-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .datasense-benefit-card-content {
+    padding: 28px 22px 32px;
+    min-height: 140px;
+  }
+
+  .datasense-benefit-title {
+    font-size: 18px;
+  }
+
+  .datasense-benefit-desc {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+

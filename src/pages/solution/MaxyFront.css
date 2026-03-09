@@ -1,0 +1,155 @@
+@import './solutionCommon.css';
+
+/* MAXY Front Hero 레이아웃 */
+.maxy-front-hero {
+  grid-template-columns: 1.5fr 1fr;
+  max-width: 1800px;
+}
+
+.maxy-front-image {
+  padding: 80px 120px;
+}
+
+.maxy-front-stack {
+  position: relative;
+  width: 110%;
+  height: 0;
+  padding-bottom: 85%;
+  overflow: visible;
+  margin-left: -5%;
+}
+
+.maxy-front-stack .stack-image {
+  object-fit: cover;
+}
+
+/* MAXY Front Content 스타일 */
+.maxy-front-content .solution-intro-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 20px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.maxy-front-content .solution-intro-subtitle-main {
+  font-size: 48px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 4px;
+  line-height: 1.5;
+}
+
+.maxy-front-content .solution-intro-name {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2945A4;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.maxy-front-content .solution-intro-desc {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+  text-align: right;
+}
+
+.maxy-front-content.text-right .solution-intro-title,
+.maxy-front-content.text-right .solution-intro-subtitle-main,
+.maxy-front-content.text-right .solution-intro-name,
+.maxy-front-content.text-right .solution-intro-desc {
+  text-align: right;
+}
+
+/* 퓨처스와 프로세스 이미지 사이 배너 — 사업분야 스타일, solution-banner_bg01 */
+.maxy-front-banner {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  padding: 56px 24px 64px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: left;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+
+.maxy-front-banner-inner {
+  max-width: 900px;
+}
+
+.maxy-front-banner-headline {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 16px;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+}
+
+.maxy-front-banner-headline:last-of-type {
+  margin-bottom: 20px;
+}
+
+.maxy-front-banner-desc {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 0 10px;
+  line-height: 1.7;
+}
+
+.maxy-front-banner-desc:last-child {
+  margin-bottom: 0;
+}
+
+/* MAXY Front 프로세스 이미지 */
+.maxy-front-process {
+  margin-top: 0;
+  padding: 0 20px;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .maxy-front-banner {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding: 48px 20px 56px;
+  }
+
+  .maxy-front-banner-headline {
+    font-size: 22px;
+  }
+
+  .maxy-front-banner-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .maxy-front-banner {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    padding: 40px 16px 48px;
+    background-attachment: scroll;
+  }
+
+  .maxy-front-banner-headline {
+    font-size: 18px;
+  }
+
+  .maxy-front-banner-desc {
+    font-size: 13px;
+  }
+
+  .maxy-front-process {
+    padding: 0 16px;
+  }
+}
+
