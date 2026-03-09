@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="웹&모바일 시스템 개발 및 유지보수 전문 기업 (주)다올피플" />
+    <meta name="author" content="(주)다올피플 DAOL-People" />
+    <title>(주)다올피플 DAOL-People</title>
+    <script type="module" crossorigin src="/assets/index-MM4d8OoF.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BxnwSWoX.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      ;(function () {
+        var redirect = sessionStorage.getItem('spa-redirect')
+        if (redirect) {
+          sessionStorage.removeItem('spa-redirect')
+          var url = new URL(redirect, window.location.origin)
+          history.replaceState(null, '', url.pathname + url.search + url.hash)
+        }
+      })()
+    </script>
+  </body>
+</html>
