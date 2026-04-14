@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react'
 import { asset } from '../../utils/asset'
 import './DataSense.css'
 
@@ -8,106 +7,107 @@ export default function DataSense() {
     heroTitle: '데이터 분석 및 인사이트 솔루션',
     heroDescription: 'DATA Sence',
     introTitle: '데이터, 이제 <span class="datasence-title-highlight">DATA Sense로</span><br />쉽고 스마트하게 활용하세요!',
-    introSubtitle: '복잡하고 방대한 데이터, 어떻게 활용해야 할지 막막하셨나요?<br />Data Sense는 누구나 데이터를 쉽게 이해하고<br />가치 있는 인사이트를 얻을 수 있도록 도와주는<br />올인원 데이터 분석 솔루션입니다.',
-    introDetail: '흩어져 있는 데이터를 한곳에 모아 분석하고, 이해하기 쉬운 형태로 시각화하여 보여주는 지능형 플랫폼입니다.<br />마치 데이터 전문가가 옆에서 분석해주는 것처럼, 비즈니스에 필요한 핵심 정보를 빠르고 정확하게 제공합니다.',
-    features: [
-      {
-        title: '쉽고 직관적인 분석',
-        description: '복잡한 코드나 쿼리 없이 클릭 몇 번과 드래그 앤 드롭 방식의 직관적인 인터페이스만으로, 코딩 지식이 없어도 누구나 웹 서핑하듯 실시간으로 데이터를 탐색하고 분석할 수 있습니다.',
-        items: [],
-      },
-      {
-        title: '똑똑한 AI 인사이트',
-        description: '인공지능이 데이터 속 숨겨진 패턴과 트렌드를 자동으로 발견하고, 중요한 변화를 빠르게 감지하며 개인화된 인사이트와 예측 분석을 제공합니다.',
-        items: [],
-      },
-      {
-        title: '자동화된 리포팅',
-        description: '인공지능이 데이터 속 숨겨진 패턴과 트렌드를 자동으로 발견하고, 중요한 변화를 빠르게 감지하며 예측 분석과 트렌드 확인, 개인화된 인사이트까지 제공하여 누구나 데이터를 스마트하게 이해하고 활용할 수 있습니다.',
-        items: [],
-      },
-    ],
+    introSubtitle:
+      '복잡한 데이터 활용의 막막함,<br />DATA Sense의 시각화 기술로 해결하세요.<br />데이터의 논리적 연결을 통해 누구나 쉽게 신뢰할 수 있는 <span class="datasence-intro-subtitle-nobreak">비즈니스 인사이트</span>를 완성합니다.',
+    introDetail:
+      '단순히 데이터를 쌓는 것을 넘어, 데이터 프로파일링부터<br />비즈니스 가치 사슬(Value Chain)까지 통합 관리하는 지능형 플랫폼입니다.<br /><br />"데이터는 비즈니스의 언어"라는 철학 아래,<br />복잡한 데이터 구조를 시각화하고 품질을 자동 관리하여<br />신뢰할 수 있는 의사결정 기반을 제공합니다.',
     suitableFor: [
       {
-        title: '데이터 기반의 의사결정',
-        desc: '데이터 기반의 합리적인 의사결정을 내리고 싶은 경영진 및 관리자',
-        icon: 'chart',
+        title: '데이터 자산화가 필요한 경영진 및 CDO',
+        coreTarget: '데이터는 많은데, 신뢰할 수 있는 지표가 부족하다면?',
+        detailHtml:
+          '전사 데이터의 품질 상태를 정량적으로 파악하고, 비즈니스 밸류 체인과 연계된 <strong class="datasense-suitable-keyword">데이터 중심의 의사결정</strong> 체계를 구축하고 싶은 관리자',
       },
       {
-        title: '업무 효율성 증대',
-        desc: '반복적인 데이터 취합 및 보고서 작성 업무를 줄이고 핵심 업무에 집중하고 싶은 실무자',
-        icon: 'report',
+        title: '시스템 통합 및 이관을 앞둔 IT 실무자',
+        coreTarget: '차세대 프로젝트나 DB 통합 시 데이터 정제가 고민이라면?',
+        detailHtml:
+          '수작업 데이터 분석 시간을 줄이고, 한글 깨짐·코드 불일치 등 기술 결함을 사전에 탐지하여 <strong class="datasense-suitable-keyword">프로젝트 리스크를 최소화</strong>하고 싶은 실무자',
       },
       {
-        title: '가치 발견',
-        desc: '데이터 분석 전문 지식은 없지만 데이터에서 가치를 발견하고 싶은 모든 분',
-        icon: 'discover',
+        title: '거버넌스 체계를 정립하려는 아키텍트',
+        coreTarget: '현행 ERD가 없고 데이터 계보 파악이 막막하다면?',
+        detailHtml:
+          '데이터 값 기반의 <strong class="datasense-suitable-keyword">논리 관계를 자동으로 시각화</strong>하고, 업무 프로세스와 시스템 간의 영향도를 한눈에 관리하고 싶은 데이터 아키텍트',
       },
     ],
     senseTargetTypes: [
       {
         typeLabel: 'FEATURE 1',
-        title: '쉽고 직관적인 분석',
-        icon: '📊',
+        title: '지능형 데이터 프로파일링',
         colorTheme: 'blue',
-        quote: '복잡한 코드 없이, 클릭 몇 번으로 데이터를 탐색하세요',
+        quote: '눈에 보이지 않는 기술적 결함까지 AI가 전수 조사합니다.',
         targetItems: [
-          '복잡한 쿼리와 도구 때문에 데이터 분석이 어렵다',
-          '전문가가 아니면 인사이트를 얻기 힘들다',
+          '데이터 이관 후 한글 깨짐이나 인코딩 오류가 반복됨',
+          '결측치, 중복 데이터 파악 등 수작업 분석에 과도한 시간 소요',
         ],
         solutionItems: [
-          '클릭·드래그만으로 직관적인 데이터 분석',
-          '실시간 데이터 탐색 및 시각화',
+          '유니코드, 미완성 한글 등 정밀 기술 결함 자동 탐지',
+          '속성별 유일성·무결성 등 품질 점수(DQ Scoring) 제공',
         ],
-        value: '비전문가도 전문가처럼 데이터 활용',
+        value: '데이터 정제 비용 30% 절감',
       },
       {
         typeLabel: 'FEATURE 2',
-        title: '똑똑한 AI 인사이트',
-        icon: '🤖',
+        title: '논리적 관계 분석 (Dynamic ERD)',
         colorTheme: 'purple',
-        quote: 'AI가 숨겨진 패턴과 트렌드를 자동으로 발견합니다',
+        quote: '컬럼명이 달라도 실제 데이터 패턴을 분석해 연결합니다.',
         targetItems: [
-          '데이터 속 패턴을 찾기 어렵다',
-          '중요한 변화를 놓치기 쉽다',
+          'ERD가 현행화되지 않아 데이터 간 연관 관계 파악이 불가능함',
+          '특정 테이블 변경 시 하위 시스템에 미칠 영향도 분석이 어려움',
         ],
         solutionItems: [
-          'AI가 패턴·트렌드 자동 발견',
-          '개인화된 인사이트와 예측 분석',
+          '데이터 값(Value) 기반의 논리 다이어그램 자동 생성',
+          '참조코드 비교를 통한 시스템 간 데이터 일관성 검증',
         ],
-        value: '숨은 인사이트 발굴',
+        value: '영향도 분석 및 데이터 계보 관리 최적화',
       },
       {
         typeLabel: 'FEATURE 3',
-        title: '자동화된 리포팅',
-        icon: '📋',
+        title: '비즈니스 밸류 체인 매핑',
         colorTheme: 'green',
-        quote: '반복 보고는 줄이고, 핵심 업무에 집중하세요',
+        quote: 'IT 시스템 아키텍처를 비즈니스 언어로 시각화합니다.',
         targetItems: [
-          '리포팅에 시간이 많이 든다',
-          '반복적인 데이터 취합이 부담이다',
+          '복잡한 DB 구조가 실제 어떤 비즈니스 프로세스에 쓰이는지 모름',
+          '데이터 분석 결과와 실제 비즈니스 목표 간의 간극 발생',
         ],
         solutionItems: [
-          '자동화된 리포팅 및 대시보드',
-          '핵심 업무에 집중',
+          '산업별 Value Chain Activity와 마스터 데이터 간 관계 매핑',
+          '비즈니스 관점의 상위 데이터 아키텍처 진단 및 정립',
         ],
-        value: '업무 효율 극대화',
+        value: '비즈니스 중심 데이터 거버넌스 완성',
       },
     ],
     benefits: [
-      { title: '업무 효율성 증대', desc: '반복적인 수작업 프로세스를 지능형 자동화로 전환하여 업무 시간을 단축하고 핵심 전략에 집중하게 합니다.' },
-      { title: '비용 절감', desc: '전문 인력이나 고가의 솔루션 없이도 수준 높은 분석이 가능하여 기업의 데이터 운영 비용을 획기적으로 낮춥니다.' },
-      { title: '신속한 의사결정', desc: '실시간 통합 시각화 데이터를 제공하여 시장 변화에 즉각 대응하고, 데이터 기반의 정밀한 판단을 지원합니다.' },
-      { title: '새로운 기회 발견', desc: '데이터 속 숨겨진 패턴을 포착하여 비즈니스 확장을 위한 최적의 인사이트와 성장 동력을 발굴합니다.' },
+      {
+        title: '분석 및 정제 비용 획기적 절감',
+        desc:
+          '수작업에 의존하던 데이터 프로파일링과 결함 탐지를 지능형 알고리즘으로 자동화하여, 데이터 분석 시간을 50% 이상 단축하고 운영 비용을 최소화합니다.',
+      },
+      {
+        title: '데이터 기반 의사결정의 신뢰도 확보',
+        desc:
+          '한글 깨짐, 중복, 코드 불일치가 제거된 고품질 정제 데이터를 제공함으로써 AI 모델 및 BI 리포트의 정확도와 의사결정의 신뢰성을 극대화합니다.',
+      },
+      {
+        title: 'IT 프로젝트 리스크 선제적 차단',
+        desc:
+          '시스템 통합 및 이관 시 발생할 수 있는 데이터 정합성 문제를 사전에 파악하여, 재작업(Rework) 비용을 방지하고 프로젝트 성공률을 높입니다.',
+      },
+      {
+        title: ' 데이터 중심의 거버넌스 체계 정립',
+        desc:
+          '비즈니스 가치 사슬과 데이터 아키텍처를 유기적으로 연결하여, 데이터가 비즈니스 어디에 기여하는지 한눈에 파악할 수 있는 전사적 가시성을 제공합니다.',
+      },
     ],
     ctaTitle: '지금 바로 Data Sense를 경험해보세요!<br />데이터가 보여주는 새로운 세상을 만날 준비가 되셨나요?',
-    ctaDesc: '무료 체험을 통해 Data Sense의 강력한 기능을 직접 확인해보세요.<br />데이터에서 가치를 발견하고 비즈니스를 성장시키는 여정을 시작하세요.',
+    ctaDesc: 'Data Sense는 기업의 복잡한 데이터를 자산으로 바꾸는 가장 확실한 도구입니다.<br />지금 바로 전문가와 상담하여 귀사에 최적화된 데이터 거버넌스 체계를 확인하십시오.',
   }
 
   return (
-    <main>
+    <main className="datasense-page">
       <section className="solution-page-section">
-        <div className="container">
+        <div className="container datasense-container">
           {/* DATA Sence 특별 레이아웃 */}
           <div className="solution-intro-hero datasence-hero">
             <div className="solution-intro-hero-image datasence-image">
@@ -117,13 +117,13 @@ export default function DataSense() {
                 className="datasence-main-image"
               />
             </div>
-            <div className="solution-intro-hero-content datasence-content text-right">
+            <div className="solution-intro-hero-content datasence-content datasence-content--center">
               <h2 
                 className="solution-intro-title"
                 dangerouslySetInnerHTML={{ __html: solution.introTitle }}
               />
               <p 
-                className="solution-intro-desc"
+                className="solution-intro-desc datasence-intro-subtitle"
                 dangerouslySetInnerHTML={{ __html: solution.introSubtitle }}
               />
             </div>
@@ -132,9 +132,9 @@ export default function DataSense() {
           {/* Data Sense란? 섹션 - 이미지 바로 아래 */}
           {solution.introDetail && (
             <div className="datasense-intro-detail">
-              <h3 className="datasense-section-title">Data Sense란?</h3>
+              <h3 className="datasense-section-title">Data Sense, 데이터의 흐름에서 비즈니스의 가치를 찾다</h3>
               <p 
-                className="solution-intro-desc"
+                className="solution-intro-desc datasense-intro-detail-body"
                 dangerouslySetInnerHTML={{ __html: solution.introDetail }}
               />
             </div>
@@ -144,11 +144,10 @@ export default function DataSense() {
           <div className="solution-features">
             <div className="datasense-target-section">
               <h2 className="datasense-target-section-title">Data Sense, 왜 특별할까요?</h2>
-              <p className="datasense-target-section-lead">이런 고민, 다올피플이 해결해 드립니다.</p>
+              <p className="datasense-target-section-lead">"단순한 시각화를 넘어, 데이터의 정합성과 비즈니스 연결성을 보장합니다."</p>
               <div className="datasense-target-types-grid">
                 {solution.senseTargetTypes.map((item, index) => (
                   <article key={index} className={`datasense-target-type-card datasense-target-type-card--${item.colorTheme}`}>
-                    <div className="datasense-target-type-icon">{item.icon}</div>
                     <span className="datasense-target-type-label">{item.typeLabel}</span>
                     <h3 className="datasense-target-type-title">{item.title}</h3>
                     <p className="datasense-target-type-quote">"{item.quote}"</p>
@@ -170,51 +169,103 @@ export default function DataSense() {
               </div>
             </div>
 
-            {/* Data Sense, 왜 특별할까요? 카드 밑 이미지 */}
-            <div className="datasense-features-image">
-              <img
-                src={asset('assets/images/reference/datasence/data-9.png')}
-                alt="Data Sense 특별한 기능"
-                className="datasense-features-image-img"
-              />
+            {/* Data Sense 핵심 역량 — ERD 배경 위에 카드 (파랑/보라/초록 톤) */}
+            <div
+              className="datasense-main-features-wrap"
+              style={{ '--erd-bg-url': `url("${asset('assets/images/reference/datasence/data-9.png')}")` }}
+            >
+              <div className="datasense-main-features-bg" aria-hidden="true" />
+              <div className="datasense-main-features">
+                <div className="datasense-main-features-divider" />
+                <h3 className="datasense-main-features-title">Data Sense 핵심 역량</h3>
+                <p className="datasense-main-features-lead">
+                  단순한 데이터 수집을 넘어, 비즈니스 가치를 창출하는 3대 핵심 기술
+                </p>
+                <div className="datasense-main-features-grid">
+                  <article className="datasense-main-feature-card datasense-main-feature-card--blue">
+                    <h4 className="datasense-main-feature-card-title">지능형 데이터 프로파일링</h4>
+                    <ul className="datasense-main-feature-card-list">
+                      <li>
+                        <span className="datasense-main-feature-card-li-check" aria-hidden>✓</span>
+                        <span>결측치 · 유니크 값 · 형식 준수율 자동 산출</span>
+                      </li>
+                      <li>
+                        <span className="datasense-main-feature-card-li-check" aria-hidden>✓</span>
+                        <span>
+                          유니코드 및 미완성 한글 등{' '}
+                          <strong className="datasense-main-feature-card-keyword">기술 결함 탐지</strong>
+                        </span>
+                      </li>
+                      <li>
+                        <span className="datasense-main-feature-card-li-check" aria-hidden>✓</span>
+                        <span>데이터 값 기반의 심층 통계 및 품질 리포트 제공</span>
+                      </li>
+                    </ul>
+                  </article>
+                  <article className="datasense-main-feature-card datasense-main-feature-card--purple">
+                    <h4 className="datasense-main-feature-card-title">데이터 관계 시각화</h4>
+                    <ul className="datasense-main-feature-card-list">
+                      <li>
+                        <span className="datasense-main-feature-card-li-check" aria-hidden>✓</span>
+                        <span>운영 시스템 기반 실시간 ERD 생성 및 확인</span>
+                      </li>
+                      <li>
+                        <span className="datasense-main-feature-card-li-check" aria-hidden>✓</span>
+                        <span>
+                          컬럼명이 달라도{' '}
+                          <strong className="datasense-main-feature-card-keyword">값 중심의 논리 다이어그램</strong>
+                          {' '}작성
+                        </span>
+                      </li>
+                      <li>
+                        <span className="datasense-main-feature-card-li-check" aria-hidden>✓</span>
+                        <span>참조코드 비교를 통한 시스템 간 데이터 정합성 검증</span>
+                      </li>
+                    </ul>
+                  </article>
+                  <article className="datasense-main-feature-card datasense-main-feature-card--green">
+                    <h4 className="datasense-main-feature-card-title">비즈니스 가치 사슬 매핑</h4>
+                    <ul className="datasense-main-feature-card-list">
+                      <li>
+                        <span className="datasense-main-feature-card-li-check" aria-hidden>✓</span>
+                        <span>
+                          산업별 주요 및 지원 활동(Value Chain) 프로세스 정의
+                        </span>
+                      </li>
+                      <li>
+                        <span className="datasense-main-feature-card-li-check" aria-hidden>✓</span>
+                        <span>
+                          업무-시스템-파일 간 상관관계 매핑 및{' '}
+                          <strong className="datasense-main-feature-card-keyword">영향도 분석</strong>
+                        </span>
+                      </li>
+                      <li>
+                        <span className="datasense-main-feature-card-li-check" aria-hidden>✓</span>
+                        <span>데이터 기반의 상위 전사 아키텍처(EA) 정립 지원</span>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
             </div>
 
-            {/* 추천 대상 섹션 — 3열 카드 (아이콘·제목·설명) */}
+            {/* 추천 대상 섹션 — 질문형 문구 + 본문 + 키워드 강조 (아이콘 없음) */}
             {solution.suitableFor && solution.suitableFor.length > 0 && (
               <div className="datasense-suitable">
-                <h3 className="datasense-section-title">이런 분들에게 추천합니다!</h3>
+                <h3 className="datasense-section-title">"신뢰할 수 있는 데이터 체계, 이런 고민에서 시작됩니다"</h3>
                 <div className="datasense-suitable-grid">
                   {solution.suitableFor.map((item, index) => (
                     <article key={index} className="datasense-suitable-card">
-                      <div className="datasense-suitable-card-icon">
-                        {item.icon === 'chart' && (
-                          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                            <rect x="6" y="26" width="10" height="14" rx="2" stroke="currentColor" strokeWidth="2"/>
-                            <rect x="19" y="18" width="10" height="22" rx="2" stroke="currentColor" strokeWidth="2"/>
-                            <rect x="32" y="10" width="10" height="30" rx="2" stroke="currentColor" strokeWidth="2"/>
-                            <circle cx="40" cy="40" r="5" stroke="currentColor" strokeWidth="2"/>
-                            <path d="M38 38l4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                          </svg>
-                        )}
-                        {item.icon === 'report' && (
-                          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                            <path d="M10 6h28v36H10V6z" stroke="currentColor" strokeWidth="2"/>
-                            <path d="M16 14h16M16 22h12M16 30h8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                            <circle cx="38" cy="38" r="6" stroke="currentColor" strokeWidth="2"/>
-                            <path d="M36 36l3 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                            <circle cx="34" cy="20" r="4" stroke="currentColor" strokeWidth="2"/>
-                          </svg>
-                        )}
-                        {item.icon === 'discover' && (
-                          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                            <circle cx="24" cy="22" r="10" stroke="currentColor" strokeWidth="2"/>
-                            <path d="M30 28l6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                            <path d="M18 26l4-4 3 2 5-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          </svg>
-                        )}
-                      </div>
                       <h4 className="datasense-suitable-card-title">{item.title}</h4>
-                      <p className="datasense-suitable-card-desc">{item.desc}</p>
+                      <p className="datasense-suitable-card-hook">
+                        <span className="datasense-suitable-card-hook-quote">“{item.coreTarget}”</span>
+                      </p>
+                      <div className="datasense-suitable-card-detail">
+                        <p
+                          className="datasense-suitable-card-desc"
+                          dangerouslySetInnerHTML={{ __html: item.detailHtml }}
+                        />
+                      </div>
                     </article>
                   ))}
                 </div>
@@ -249,7 +300,7 @@ export default function DataSense() {
             backgroundImage: `linear-gradient(120deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25)), url("${asset('assets/images/reference/datasence/data-3.png')}")`,
           }}
         >
-          <div className="container">
+          <div className="container datasense-container">
             <h2 
               className="solution-cta-title"
               dangerouslySetInnerHTML={{ __html: solution.ctaTitle }}
@@ -258,6 +309,13 @@ export default function DataSense() {
               className="solution-cta-desc"
               dangerouslySetInnerHTML={{ __html: solution.ctaDesc }}
             />
+            <hr className="datasence-cta-contact-rule" aria-hidden="true" />
+            <div className="datasence-cta-contact">
+              <div className="datasence-cta-contact-label">[도입 및 기술 컨설팅 문의]</div>
+              <div className="datasence-cta-contact-line">
+                대표컨설턴트 : 강신길 부사장(sgkang@dopp.co.kr) / 연구소장 이우석(wslee@dopp.co.kr)
+              </div>
+            </div>
           </div>
         </div>
       </section>

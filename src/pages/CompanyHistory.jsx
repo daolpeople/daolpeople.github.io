@@ -16,7 +16,7 @@ export default function CompanyHistory() {
 
   return (
     <main>
-      <section className="section">
+      <section className="section history-section">
         <div className="container">
           <PageHero
             title="주요 연혁"

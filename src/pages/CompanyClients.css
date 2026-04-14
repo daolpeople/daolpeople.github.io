@@ -12,6 +12,7 @@
   text-align: center;
   color: #94a3b8;
   font-weight: 700;
+  word-break: keep-all;
   min-height: 160px;
   display: flex;
   align-items: center;

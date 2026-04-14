@@ -4,7 +4,7 @@ import { asset } from '../utils/asset'
 
 export default function Header() {
   const location = useLocation()
-  const [openSubmenu, setOpenSubmenu] = useState(null) // 'company' | 'solution' | null
+  const [openSubmenu, setOpenSubmenu] = useState(null) // 'company' | 'solution' | 'mobile' | null
 
   useEffect(() => {
     setOpenSubmenu(null)
@@ -25,7 +25,7 @@ export default function Header() {
               onMouseEnter={() => setOpenSubmenu('company')}
               onMouseLeave={() => setOpenSubmenu(null)}
             >
-              <Link className="menu-link" to="/company/history">COMPANY</Link>
+              <span className="menu-link">COMPANY</span>
               <ul className="submenu">
                 <li><Link to="/company/history">연혁</Link></li>
                 <li><Link to="/company/clients">고객사</Link></li>
@@ -40,15 +40,23 @@ export default function Header() {
               onMouseEnter={() => setOpenSubmenu('solution')}
               onMouseLeave={() => setOpenSubmenu(null)}
             >
-              <Link className="menu-link" to="/solution/datasense">솔루션</Link>
+              <span className="menu-link">AX 솔루션</span>
               <ul className="submenu">
-                <li><Link to="/solution/datasense">DATA Sence</Link></li>
+                <li><Link to="/solution/datasense">DATA Sense</Link></li>
                 <li><Link to="/solution/axi-paas">AX iPaaS</Link></li>
-                <li><Link to="/solution/ARGUS">ARGUS</Link></li>
-                <li><Link to="/solution/maxy-mobile">MAXY Mobile</Link></li>
+                <li><Link to="/solution/argus">ARGUS</Link></li>
+              </ul>
+            </li>
+            <li
+              className={`menu-item${openSubmenu === 'mobile' ? ' is-open' : ''}`}
+              onMouseEnter={() => setOpenSubmenu('mobile')}
+              onMouseLeave={() => setOpenSubmenu(null)}
+            >
+              <span className="menu-link">Mobile 솔루션</span>
+              <ul className="submenu">
                 <li><Link to="/solution/maxy-front">MAXY Web</Link></li>
+                <li><Link to="/solution/maxy-mobile">MAXY Mobile</Link></li>
                 <li><Link to="/solution/miaps-hybrid">MiAPS Hybrid</Link></li>
-              
               </ul>
             </li>
             <li className="menu-item">

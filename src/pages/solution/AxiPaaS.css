@@ -1,6 +1,6 @@
-@import './solutionCommon.css';
+/* AxiPaaS.css — AX iPaaS 페이지 전용 (공통: SolutionLayout) */
 
-/* 이데아텍 iPaaS — Deep Blue + White, 엔터프라이즈 신뢰감 */
+/* 컬러 변수 및 Hero */
 .axipaas-page {
   --ax-deep: #0f172a;
   --ax-blue: #1e40af;
@@ -192,6 +192,34 @@
 /* CTA */
 /* 반응형 */
 @media (max-width: 900px) {
+  .axipaas-why {
+    padding: 72px 20px 72px;
+  }
+
+  .axipaas-why-image-wrap {
+    gap: 52px;
+    overflow: visible;
+  }
+
+  /* 모바일·태블릿: 데스크톱보다 작게 쓰던 02·05도 전체 폭 활용 */
+  .axipaas-why-image-02,
+  .axipaas-why-image-05 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* 살짝 확대해 가독성·임팩트 보강 (레이아웃 박스는 그대로) */
+  .axipaas-why .axipaas-why-image,
+  .axipaas-image-section .axipaas-image-img {
+    transform: scale(1.07);
+    transform-origin: center center;
+  }
+
+  .axipaas-image-section {
+    padding: 56px 20px 48px;
+    overflow: visible;
+  }
+
   .axipaas-stories .axipaas-section-title {
     font-size: 28px;
     margin-bottom: 40px;
@@ -217,7 +245,26 @@
 
 @media (max-width: 600px) {
   .axipaas-hero {
-    padding: 100px 20px 80px;
+    padding: 100px 16px 80px;
+  }
+
+  .axipaas-why {
+    padding: 56px 16px 56px;
+  }
+
+  .axipaas-why-image-wrap {
+    gap: 42px;
+  }
+
+  .axipaas-why .axipaas-why-image,
+  .axipaas-image-section .axipaas-image-img {
+    transform: scale(1.1);
+    transform-origin: center center;
+  }
+
+  .axipaas-image-section {
+    padding: 48px 16px 40px;
+    overflow: visible;
   }
 
   .axipaas-stories {

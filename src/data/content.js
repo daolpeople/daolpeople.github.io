@@ -14,20 +14,19 @@ export const whyDaolItems = [
   {
     icon: '✓',
     title: 'AX 컨설팅 & IT 서비스',
-    description: ['컨설팅, 구축, 운영까지', '하나의 흐름으로 책임집니다.'],
+    description: ['AX의 시작부터 완성까지,', '비즈니스에 지능을 더합니다.'],
   },
   {
     icon: '✓',
     title: '차별화된 AX 솔루션 제공',
     description: [
-      'AI 기술을 접목한 AX로',
-      '비즈니스 혁신과 효율적인 의사결정을 지원합니다.',
+      '비용은 줄이고, 가장 현실적인 맞춤형', 'AX솔루션을 제공합니다.',
     ],
   },
   {
     icon: '✓',
     title: '실무 중심 프로젝트 수행',
-    description: ['현장에서 검증된 경험으로', '현실적인 IT 해답을 제시합니다.'],
+    description: ['현장에서 검증된 경험으로', '실무 전문가들이 처음부터 끝까지 책임집니다.'],
   },
   {
     icon: '✓',
@@ -37,7 +36,7 @@ export const whyDaolItems = [
   {
     icon: '✓',
     title: '신뢰를 바탕으로 한 협업',
-    description: ['단기 프로젝트가 아닌', '장기적인 파트너십을 지향합니다.'],
+    description: ['기술에 신뢰를, 협업에 가치를 담습니다.', '함께 만드는 혁신, 끝까지 책임지는 파트너쉽'],
   },
 
 ]
@@ -190,32 +189,6 @@ export const clientLogos = [
   { name: '홈플러스', file: 'assets/images/homeplus.jpg' },
   { name: '세스코', file: 'assets/images/cesco.jpg' },
   { name: 'GS', file: 'assets/images/GS.jpg' },
-]
-
-/**
- * 신뢰 지표 데이터
- * 메인페이지의 "신뢰를 증명하는 섹션"에 표시되는 실적/경험 데이터
- * 연혁 데이터를 기반으로 계산된 통계 정보
- */
-export const trustStats = [
-  {
-    number: '7',
-    unit: '년',
-    label: '업력',
-    description: '2018년 설립 이후 꾸준한 성장',
-  },
-  {
-    number: '44',
-    unit: '건',
-    label: '프로젝트',
-    description: '다양한 산업 분야의 시스템 구축 경험',
-  },
-  {
-    number: '70',
-    unit: '%',
-    label: '유지보수 고객',
-    description: '장기적인 협업 관계 유지',
-  },
 ]
 
 /**

@@ -1,6 +1,6 @@
-@import './solutionCommon.css';
+/* MaxyMobile.css — MAXY Mobile 페이지 전용 (공통: SolutionLayout) */
 
-/* MAXY Mobile 로고 슬라이드 공통 스타일 */
+/* 로고 슬라이드 */
 .maxy-mobile-logo-slider {
   margin-top: 100px;
   margin-bottom: -20px;
@@ -102,6 +102,13 @@
   margin: 0 0 20px;
   line-height: 1.5;
   letter-spacing: -0.3px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* 데스크톱: 한 줄 / 모바일: 두 줄 */
+.maxy-mobile-content .maxy-mobile-title-break {
+  display: none;
 }
 
 .maxy-mobile-content .solution-intro-subtitle-main {
@@ -186,75 +193,29 @@
   padding: 0 20px;
 }
 
-/* MAXY Mobile 로고 슬라이드 */
-.maxy-mobile-logo-slider {
-  margin-top: 100px;
-  margin-bottom: -20px;
-  padding: 60px 20px;
-  background: #ffffff;
-  border-radius: 16px;
-}
-
-.maxy-mobile-logo-slider-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 5%,
-    black 95%,
-    transparent 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 5%,
-    black 95%,
-    transparent 100%
-  );
-}
-
-.maxy-mobile-logo-slider-track {
-  display: flex;
-  gap: 40px;
-  will-change: transform;
-  width: fit-content;
-  transition: none;
-}
-
-.maxy-mobile-logo-item {
-  flex-shrink: 0;
-  width: 280px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  padding: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.maxy-mobile-logo-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-.maxy-mobile-logo-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.maxy-mobile-logo-item:hover img {
-  transform: scale(1.05);
-}
-
 /* 반응형 */
 @media (max-width: 900px) {
+  /* 히어로 모바일: 1열로 쌓이게 */
+  .maxy-mobile-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  .maxy-mobile-content .maxy-mobile-title-break {
+    display: block;
+  }
+
+  .maxy-mobile-image {
+    padding: 40px 20px;
+  }
+
+  .maxy-mobile-stack {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 70%;
+  }
+
   .maxy-mobile-banner {
     margin-top: 64px;
     margin-bottom: 64px;
@@ -267,6 +228,17 @@
 
   .maxy-mobile-banner-desc {
     font-size: 14px;
+  }
+
+  /* 프로세스 이미지 ↔ 로고 슬라이드 간격 많이 줄임 */
+  .maxy-mobile-process {
+    margin-bottom: 8px;
+  }
+
+  .maxy-mobile-logo-slider {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    padding: 16px 20px;
   }
 }
 
@@ -288,12 +260,13 @@
 
   .maxy-mobile-process {
     padding: 0 16px;
+    margin-bottom: 4px;
   }
 
   .maxy-mobile-logo-slider {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 40px 16px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    padding: 0px 16px;
   }
 
   .maxy-mobile-logo-item {

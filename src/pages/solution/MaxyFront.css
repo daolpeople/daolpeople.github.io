@@ -1,13 +1,15 @@
-@import './solutionCommon.css';
+/* MaxyFront.css — MAXY Web 페이지 전용 (공통: SolutionLayout) */
 
-/* MAXY Front Hero 레이아웃 */
+/* Hero — 데스크톱만 적용, 모바일(900px/480px)에서 해제 */
 .maxy-front-hero {
-  grid-template-columns: 1.5fr 1fr;
-  max-width: 1800px;
+  grid-template-columns: 0.9fr 1.3fr;
+  max-width: 1600px;
+  padding-top: 32px;
+  padding-bottom: 80px;
 }
 
 .maxy-front-image {
-  padding: 80px 120px;
+  padding: 20px 40px;
 }
 
 .maxy-front-stack {
@@ -23,7 +25,45 @@
   object-fit: cover;
 }
 
+.maxy-front-stack .stack-1 {
+  width: auto;
+  height: auto;
+  max-width: none;
+  left: 65%;
+  top: 0;
+  transform: translate(-50%, 0);
+  object-fit: contain;
+}
+
+.maxy-front-stack .stack-2 {
+  width: auto;
+  height: auto;
+  max-width: none;
+  left: 75%;
+  top: 40px;
+  transform: translate(-50%, 0);
+  object-fit: contain;
+}
+
+.maxy-front-stack .stack-3 {
+  width: auto;
+  height: auto;
+  max-width: none;
+  left: 40%;
+  top: 25px;
+  transform: translate(-50%, 150px);
+}
+
+/* 히어로 이미지가 퓨처스를 가리지 않도록 퓨처스 섹션 위 여백 — 데스크톱만, 모바일에서 해제 */
+.maxy-front-hero + .solution-features {
+  margin-top: 140px;
+}
+
 /* MAXY Front Content 스타일 */
+.maxy-front-content {
+  padding-top: 200px;
+}
+
 .maxy-front-content .solution-intro-title {
   font-size: 18px;
   font-weight: 400;
@@ -115,8 +155,94 @@
   padding: 0 20px;
 }
 
-/* 반응형 */
+/* 반응형 — MAXY Mobile과 동일한 폰트/위치 */
 @media (max-width: 900px) {
+  .maxy-front-hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 24px;
+    padding-bottom: 48px !important; /* 데스크톱 80px 해제 */
+  }
+
+  .maxy-front-image {
+    padding: 24px 16px;
+    max-width: 100%;
+    overflow: hidden;
+    order: 1;
+  }
+
+  .maxy-front-stack {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 60%;
+    max-width: 100%;
+  }
+
+  .maxy-front-stack .stack-image {
+    object-fit: contain;
+  }
+
+  /* 모바일: 이미지 뷰포트에 맞게 크기 제한 */
+  .maxy-front-stack .stack-1,
+  .maxy-front-stack .stack-2,
+  .maxy-front-stack .stack-3 {
+    max-width: 100%;
+    width: 100% !important;
+    height: auto !important;
+    left: 50% !important;
+    top: 0 !important;
+    transform: translate(-50%, 0) !important;
+  }
+
+  .maxy-front-stack .stack-2 {
+    top: 12px !important;
+  }
+
+  .maxy-front-stack .stack-3 {
+    top: 24px !important;
+  }
+
+  /* 데스크톱 padding-top: 200px 모바일에서 확실히 해제 */
+  .maxy-front-content {
+    padding-top: 0 !important;
+    order: 2;
+  }
+
+  /* 모바일에서만 맵시 웹처럼: 메인 타이틀 두 줄 (프론트 모니터링 / 솔루션) */
+  .maxy-front-content .maxy-front-title-line2 {
+    display: block;
+  }
+
+  /* Maxy Mobile과 동일: 모바일에서 18/48/48/16 고정 (공통 스타일 덮어씀) */
+  .maxy-front-content .solution-intro-title {
+    font-size: 18px !important;
+  }
+
+  .maxy-front-content .solution-intro-subtitle-main,
+  .maxy-front-content .solution-intro-name {
+    font-size: 48px !important;
+  }
+
+  .maxy-front-content .solution-intro-desc {
+    font-size: 16px !important;
+  }
+
+  /* 맵시 웹처럼: 모바일에서 타이틀·설명은 왼쪽, 제품명(MAXY Front)만 중앙 */
+  .maxy-front-content .solution-intro-title,
+  .maxy-front-content .solution-intro-subtitle-main,
+  .maxy-front-content .solution-intro-desc {
+    text-align: left;
+  }
+
+  .maxy-front-content .solution-intro-name {
+    text-align: center;
+  }
+
+  /* 데스크톱 140px 해제, 모바일만 48px */
+  .maxy-front-hero + .solution-features {
+    margin-top: 48px !important;
+  }
+
   .maxy-front-banner {
     margin-top: 64px;
     margin-bottom: 64px;
@@ -133,6 +259,53 @@
 }
 
 @media (max-width: 480px) {
+  .maxy-front-hero {
+    padding-top: 16px;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+
+  .maxy-front-image {
+    padding: 20px 12px;
+  }
+
+  .maxy-front-stack {
+    padding-bottom: 55%;
+  }
+
+  /* Maxy Mobile과 동일: 480px에서도 18/48/48/16 유지 (solutionCommon 22/20/18/14 덮어씀) */
+  .maxy-front-content .solution-intro-title {
+    font-size: 18px !important;
+  }
+
+  .maxy-front-content .solution-intro-subtitle-main {
+    font-size: 48px !important;
+  }
+
+  .maxy-front-content .solution-intro-name {
+    font-size: 48px !important;
+  }
+
+  .maxy-front-content .solution-intro-desc {
+    font-size: 16px !important;
+  }
+
+  /* 480px에서도 맵시 웹과 동일 정렬 유지 */
+  .maxy-front-content .solution-intro-title,
+  .maxy-front-content .solution-intro-subtitle-main,
+  .maxy-front-content .solution-intro-desc {
+    text-align: left;
+  }
+
+  .maxy-front-content .solution-intro-name {
+    text-align: center;
+  }
+
+  .maxy-front-hero + .solution-features {
+    margin-top: 40px !important;
+  }
+
+  /* solutionCommon과 동일: 22/20/18/14 — 맥시모바일과 동일 */
   .maxy-front-banner {
     margin-top: 56px;
     margin-bottom: 56px;

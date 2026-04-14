@@ -28,9 +28,9 @@ const services = [
     icon: '📦',
     title: '솔루션 패키징',
     items: [
-      'ERP·그룹웨어 등 핵심 솔루션 공급',
-      '레거시 시스템 & 외부 API 통합',
-      '비즈니스 대응형 유연한 확장 설계',
+      'AX플랫폼 기반 핵심 솔루션 공급',
+      '데이터 자동 품질 점검 및 개선',
+      '비즈니스 대응형 유연한 솔루션',
     ],
     summary: '완벽한 AX 패키징을 실현합니다.',
   },
@@ -176,7 +176,7 @@ export default function Business() {
       </section>
 
       {/* 3단계: AX Total Solution — dopp-business-01 이미지 */}
-      <section className="business-process-v2 business-ax-total">
+      {/* <section className="business-process-v2 business-ax-total">
         <div className="container">
           <h2 className="business-section-title-v2">AX Total Solution</h2>
           <p className="business-ax-total-tagline">단순한 시스템 구축을 넘어, 지능형 비즈니스 생태계를 설계합니다</p>
@@ -192,7 +192,7 @@ export default function Business() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* 4단계: 이런 고객에게 적합합니다 — TYPE 1~3 + SPECIAL */}
       <section className="business-target-v2">
@@ -225,8 +225,13 @@ export default function Business() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="business-cta-v2">
+      {/* CTA — 배경: public/assets/images/dopp-cta-01.png */}
+      <section
+        className="business-cta-v2"
+        style={{
+          backgroundImage: `linear-gradient(120deg, rgba(15, 23, 42, 0.88), rgba(30, 41, 59, 0.58)), url("${asset('assets/images/dopp-cta-01.png')}")`,
+        }}
+      >
         <div className="container">
           <div className="business-cta-inner-v2">
             <h2 className="business-cta-title-v2">IT 파트너를 찾고 계신가요?</h2>

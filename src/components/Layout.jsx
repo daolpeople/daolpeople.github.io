@@ -6,9 +6,11 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <ScrollHandler />
-      {children}
-      <Footer />
+      <div className="layout-main">
+        <ScrollHandler />
+        {children}
+        <Footer />
+      </div>
     </>
   )
 }

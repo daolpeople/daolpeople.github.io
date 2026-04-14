@@ -110,7 +110,9 @@ export default function MiapsHybrid() {
             </div>
             <div className="solution-intro-hero-content miap-hybrid-content text-right">
               <h2 className="solution-intro-title">
-                모바일 앱을 안정적으로 개발하고 통합운영 할 수있는
+                모바일 앱을 안정적으로 개발하고
+                <br />
+                통합 운영을 할 수 있는
               </h2>
               <h3 className="solution-intro-subtitle-main">
                 모바일 통합 플랫폼

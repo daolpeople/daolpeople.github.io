@@ -13,7 +13,8 @@ export default function MaxyMobile() {
     name: 'MAXY Mobile',
     heroTitle: '모바일 앱 모니터링 솔루션',
     heroDescription: 'MAXY Mobile',
-    introTitle: '모바일 앱 서비스의 성능과 사용성을 측정하는 방식',
+    introTitleLine1: '모바일 앱 서비스의 성능과 사용성을',
+    introTitleLine2: '측정하는 방식',
     introSubtitle: '고객 모바일 서비스 경험 개선 및 안정적인 제공을 위해서는 무엇보다 앱의 성능과 사용성이<br />측정되어야 하며 측정을 통해 수집되어 분석된 데이터는 서비스 개선을 위한 핵심 지표가 됩니다',
     features: [
       {
@@ -109,7 +110,9 @@ export default function MaxyMobile() {
             </div>
             <div className="solution-intro-hero-content maxy-mobile-content text-right">
               <h2 className="solution-intro-title">
-                {solution.introTitle}
+                {solution.introTitleLine1}
+                <br className="maxy-mobile-title-break" />
+                {solution.introTitleLine2}
               </h2>
               <h3 className="solution-intro-subtitle-main">
                 {solution.heroTitle}

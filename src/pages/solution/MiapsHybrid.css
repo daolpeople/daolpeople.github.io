@@ -1,6 +1,6 @@
-@import './solutionCommon.css';
+/* MiapsHybrid.css — MiAPS Hybrid 페이지 전용 (공통: SolutionLayout) */
 
-/* MiAPS Hybrid Hero 레이아웃 */
+/* Hero */
 .miap-hybrid-hero {
   grid-template-columns: 1fr 1fr;
   max-width: 1600px;
@@ -79,6 +79,8 @@
   margin: 0 0 20px;
   line-height: 1.5;
   letter-spacing: -0.3px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .miap-hybrid-content .solution-intro-subtitle-main {
@@ -173,6 +175,23 @@
 
 /* 반응형 */
 @media (max-width: 900px) {
+  /* 히어로 모바일: 1열로 쌓이게 */
+  .miap-hybrid-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  .miap-hybrid-image {
+    padding: 40px 20px;
+  }
+
+  .miap-hybrid-stack {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 70%;
+  }
+
   .miap-hybrid-banner {
     margin-top: 64px;
     margin-bottom: 64px;

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { asset } from '../utils/asset'
-import { newsItems, solutionCards, whyDaolItems, trustStats } from '../data/content'
+import { newsItems, solutionCards, whyDaolItems } from '../data/content'
 
 export default function Home() {
   const whyDaolRef = useRef(null)
@@ -47,13 +47,15 @@ export default function Home() {
 
       <section className="section solution-section">
         <div className="container">
-          <div className="section-title">전문 IT 서비스 기업</div>
+          <div className="section-title">AX기반 고객 가치 중심의 IT 서비스</div>
           <div className="section-desc">
-            <strong>웹·모바일 시스템 구축, 유지보수, 데이터 기반의 AX전환 까지</strong>
+            <strong>가장 현실적인 AX솔루션.</strong>
             <br />
-            다올피플은 안정적이고 신뢰할 수 있는 IT 서비스를 제공하는
+            데이터를 가치로, 기술을 성과로.
             <br />
-            전문 시스템 구축 및 운영 기업입니다.
+            전략부터 운영까지, 완벽한 AX전환.
+            <br />
+            다올피플과 만드는 지능형 비즈니스의 시작
           </div>
           <div className="grid cols-3">
             {solutionCards.map((card) => (
@@ -90,24 +92,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section trust-section">
-        <div className="container">
-          <div className="section-title">신뢰를 증명하는 실적</div>
-          <div className="trust-stats-grid">
-            {trustStats.map((stat, index) => (
-              <div key={index} className="trust-stat-item">
-                <div className="trust-stat-number">
-                  {stat.number}
-                  <span className="trust-stat-unit">{stat.unit}</span>
-                </div>
-                <div className="trust-stat-label">{stat.label}</div>
-                <div className="trust-stat-description">{stat.description}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+     
       <section id="partner" className="section home-news">
         <div className="container">
           <div className="section-title">다올소식</div>

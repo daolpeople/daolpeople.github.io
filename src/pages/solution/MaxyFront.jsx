@@ -8,7 +8,7 @@ export default function MaxyFront() {
   const solution = {
     name: 'MAXY Front',
     heroTitle: '프론트 모니터링 솔루션',
-    heroDescription: 'MAXY Front',
+    heroDescription: 'MAXY Web',
     introTitle: '다양한 웹 환경의 전구간을 모니터링하는 방식',
     introSubtitle: '모든 프론트 구간의 개별 고객 성능 만족도를<br />측정하여 사용성과 성능 저하 발생 시<br />고객 환경 기준에서의 원인을 추적할 수<br />있도록 지원합니다.',
     features: [
@@ -23,7 +23,7 @@ export default function MaxyFront() {
       },
       {
         title: 'FEATURE 2',
-        image: 'assets/images/maxy3.png',
+        image: 'assets/images/maxy3.png', 
         items: [
           '병목 현상, 느린 구간에 대한 성능 저하 원인 분석 지원',
           '장애 발생 시 해결을 위한 다양한 디버깅용 데이터 및 가이드 제공',
